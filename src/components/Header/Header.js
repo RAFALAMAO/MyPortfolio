@@ -11,7 +11,7 @@ const Header = () =>  (
         <a style={{ display: 'flex', alignItems: 'center', color:"white" }} href="https://macieytm.github.io/About-Me" target="_blank">
           <DiCssdeck size="3rem" />
           <img source="https://rafalamao.github.io/assets/images/r_f_azul.png"></img>
-          <ShowCase>RAFALAMAO</ShowCase>
+          <ShowCase>666</ShowCase>
         </a>
     </Div1>
     <Div2>
