@@ -1,7 +1,7 @@
 export const projects = [
   {
-    title: 'Bot Assistant',
-    description: "Develop of a bot assistant along with Intevolution, this bot helps manage the students and teachers process, using pure Javascript and Azure services.",
+    title: 'Virtual Assistant',
+    description: "Develop of a virtual assistant inside of Intevolution, this bot helps manage the students and teachers process, using pure Javascript and Azure services.",
       image: '/images/projects/BotSeg.png',
       tags: ['JavaScript', 'Azure'],
     source: 'https://www.seg.guanajuato.gob.mx/SitePages/Home.aspx',
@@ -10,37 +10,36 @@ export const projects = [
   },
   {
     title: 'Hector Quadrotor Port',
-    description: "Due hector quadrotor only have melodic version working, in this thread I generated a port of this dron simulator to work with ROS Noetic.",
-      image: '/images/TM.png',
+    description: "Due hector quadrotor (drone simulator) only works on ROS melodic version, I generated a port to work with ROS Noetic.",
+      image: 'https://github.com/RAFALAMAO/hector-quadrotor-noetic/raw/main/imgs/gif.GIF',
       tags: ['ROS', 'C++'],
-    source: 'https://macieytm.github.io/TrackMania-Website',
-    visit: 'https://github.com/MacieyTM/TrackMania-Website',
+    source: 'https://github.com/RAFALAMAO/hector-quadrotor-noetic',
+    visit: 'https://rafalamao.github.io/hector-ros-noetic/',
     id: 1,
   },
   {
     title: 'ORBSLAM2 Ubuntu 20 Port',
     description: "Due ORBSLAM2 is a little old, I generated a port of this algorithms to work with Ubuntu 20 and ROS Noetic.",
-      image: '/images/TM.png',
+      image: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC/raw/main/images/ORB_SLAM2.gif',
       tags: ['ROS', 'C++'],
-    source: 'https://macieytm.github.io/TrackMania-Website',
-    visit: 'https://github.com/MacieyTM/TrackMania-Website',
+    source: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC',
+    visit: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC',
     id: 2,
   },
   {
     title: 'ORBSLAM3 Ubuntu 20 Port',
     description: "Due ORBSLAM3 is a little old, I generated a port of this algorithms to work with Ubuntu 20 and ROS Noetic.",
-      image: '/images/TM.png',
+      image: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC/raw/main/images/ORB_SLAM3.gif',
       tags: ['ROS', 'C++'],
-    source: 'https://macieytm.github.io/TrackMania-Website',
-    visit: 'https://github.com/MacieyTM/TrackMania-Website',
-    id: 2,
+    source: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC',
+    visit: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC',
+    id: 3,
   }
 ];
 
 export const TimeLineData = [
-  { year: 2018, text: 'Wyróżnienie jako betatester'},
-  { year: 2019, text: 'Udział w światowym turnieju gry TrackMania'},
-  { year: 2019, text: 'Wolontariusz w POLARIS - OPP'},
-  { year: 2020, text: 'Laureat Złotego Indeksu Politechniki Krakowskiej'},
-  { year: 2020, text: 'Laureat Złotego Indeksu Politechniki Śląskiej'},
+  { year: 2020, text: 'Working at Intevolution'},
+  { year: 2020, text: 'Mechatronic engineering graduation'},
+  { year: 2021, text: 'Solutions for TMR (Torneo Mexicano de Robotica) 2021 tests'},
+  { year: 2022, text: 'Participation in the CIRC (Congreso Internacional de Robótica y Computación ) 2022'},
 ];

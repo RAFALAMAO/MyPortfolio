@@ -4,15 +4,13 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
 const data = [
-  { number: 2020, text: 'Złoty Indeks Politechniki Krakowskiej'},
-  { number: 2020, text: 'Złoty Indeks Politechniki Śląskiej'},
-  { number: 2019, text: 'Reprezentant Polski w grze TrackMania'},
-  { number: 2018, text: 'Wyróżniony betatester'}
+  { number: 2020, text: 'Mechatronic engineering graduation'},
+  { number: 2020, text: 'Working at Intevolution'},
 ];
 
 const Acomplishments = () => (
   <Section>
-    <SectionTitle>Osiągnięcia</SectionTitle>
+    <SectionTitle>Achievements</SectionTitle>
     <Boxes>
       {data.map((card, index) => (
         <Box key={index}>

@@ -13,6 +13,7 @@ const Technologies = () =>  (
       <strong>Mechatronics:</strong> ROS, Matlab, SolidWorks, LabView<br/><br/>
       <strong>OS:</strong> Windows, Linux<br/><br/>
       <strong>Cloud:</strong> Azure, AWS<br/><br/>
+      <strong>Other:</strong> AI (TensorFlow), Computer Vision (OpenCV)<br/><br/>
       <strong>IDE:</strong> Visual Studio Code.
     </SectionText>
     <List>
@@ -23,7 +24,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Najczęściej używane:<br />
+            More used:<br />
             React.js
           </ListParagraph>
         </ListContainer>
@@ -35,8 +36,8 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Najczęściej używane:<br />
-            Firebase
+            More used:<br />
+            Javascript
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -47,7 +48,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>IDE</ListTitle>
           <ListParagraph>
-            Najczęściej używane:<br />
+            More used:<br />
             Visual Studio Code
           </ListParagraph>
         </ListContainer>

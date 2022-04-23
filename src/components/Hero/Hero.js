@@ -12,9 +12,9 @@ const Hero = (props) => (
           Welcome to my portfolio!
         </SectionTitle>
         <SectionText>
-        Aarón (RAFALAMAO) | Mechatronics engenier, ROS and fullstack web apps developer with technologies like JavaScript/React.
+        Aarón (RAFALAMAO) | Mechatronic engenieer, ROS and Full Stack Developer with technologies like JavaScript/React.
         </SectionText>
-        <a href="https://macieytm.github.io/About-Me" target="_blank">
+        <a href="https://rafalamao.github.io/about/" target="_blank">
         <Button onClick={props.handleClick}>About Me</Button></a>
       </LeftSection>
     </Section>

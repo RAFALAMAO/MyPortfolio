@@ -8,10 +8,10 @@ import { Container, Div1, Div2, Div3, NavLink, ShowCase, SocialIcons } from './H
 const Header = () =>  (
   <Container>
     <Div1>
-        <a style={{ display: 'flex', alignItems: 'center', color:"white" }} href="https://macieytm.github.io/About-Me" target="_blank">
-          <DiCssdeck size="3rem" />
-          <img source="https://rafalamao.github.io/assets/images/r_f_azul.png"></img>
-          <ShowCase>666</ShowCase>
+        <a style={{ display: 'flex', alignItems: 'center', color:"white" }} href="https://rafalamao.github.io/about/" target="_blank">
+          {/* <DiCssdeck size="3rem" /> */}
+          <img style={{position:"relative", width:"2rem", height:"auto"}} src="./images/r/r.png" ></img>
+          <ShowCase style={{color: 'rgb(49,165,202)' }}>AFALAMAO</ShowCase>
         </a>
     </Div1>
     <Div2>
@@ -27,7 +27,7 @@ const Header = () =>  (
       </li>
       <li>
         <Link href="#about">
-          <NavLink>About me</NavLink>
+          <NavLink>About</NavLink>
         </Link>
       </li>
       <li>
@@ -35,16 +35,16 @@ const Header = () =>  (
       </li>
     </Div2>
       <Div3>
-        <SocialIcons href="https://github.com/MacieyTM" target="_blank">
+        <SocialIcons href="https://github.com/RAFALAMAO" target="_blank">
           <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://www.linkedin.com/in/macieytm" target="_blank">
+        <SocialIcons href="https://www.linkedin.com/in/aar%C3%B3n-ju%C3%A1rez-aa42361ab" target="_blank">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://twitter.com/MacieyTM" target="_blank">
+        {/* <SocialIcons href="https://twitter.com/MacieyTM" target="_blank">
           <AiOutlineTwitter size="3rem"/>
-        </SocialIcons>
-        <SocialIcons href="https://www.youtube.com/channel/UCLUrR7bodWNdt9G9YWeCIWA" target="_blank">
+        </SocialIcons> */}
+        <SocialIcons href="https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA" target="_blank">
           <AiFillYoutube size="3rem"/>
         </SocialIcons>
       </Div3>

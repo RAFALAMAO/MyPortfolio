@@ -9,31 +9,31 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Telefon</LinkTitle>
-          <LinkItem>+48 600-511-196</LinkItem>
+          <LinkTitle>Phone Number</LinkTitle>
+          <LinkItem>+52 5622112310</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>E-mail</LinkTitle>
-          <LinkItem href="https://mail.google.com">
-            mghej3@gmail.com
+          <LinkItem href="https://outlook.live.com/mail" target="_blank">
+            aaronjt@outlook.com
           </LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>&copy; Copyright 2022 | M. Grochowski</Slogan>
+          <Slogan>&copy; 2022 | A. Juárez</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/MacieyTM" target="_blank">
+          <SocialIcons href="https://github.com/RAFALAMAO" target="_blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/macieytm" target="_blank">
+          <SocialIcons href="https://www.linkedin.com/in/aar%C3%B3n-ju%C3%A1rez-aa42361ab" target="_blank">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://twitter.com/MacieyTM" target="_blank">
+          {/* <SocialIcons href="https://twitter.com/MacieyTM" target="_blank">
             <AiOutlineTwitter size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://www.youtube.com/channel/UCLUrR7bodWNdt9G9YWeCIWA" target="_blank">
+          </SocialIcons> */}
+          <SocialIcons href="https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA" target="_blank">
             <AiFillYoutube size="3rem" />
           </SocialIcons>
         </SocialContainer>

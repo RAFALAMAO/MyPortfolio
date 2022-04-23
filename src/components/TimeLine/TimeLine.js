@@ -66,62 +66,52 @@ const Timeline = () => {
 
   return (
     <Section id='about'>
-      <SectionTitle>O mnie</SectionTitle>
+      <SectionTitle>About</SectionTitle>
       <SectionText>
         <br />
-        Maciej&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grochowski&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21
-        lat
+        Aarón&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAFALAMAO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26
+        yo
         <br />
         <br />
-        Jestem studentem informatyki czwartego semestru Politechniki Krakowskiej
-        na wydziale Informatyki i Telekomunikacji.
+        I’m a Mechatronic Engineer at UPIITA from México, I love development, music and graphical design.
         <br />
         <br />
-        Zaczynałem od języka C/C++, potem języki JavaScript, Python, C#, Java.
-        Obecnie programuję głównie w technologii React.
+        I started with C / C ++, then Matlab, LabView, JavaScript, Python, C #, Java. Currently I am programming mainly in React technology.
         <br />
         <br />
-        Pochodzę z Żywca, ale od rozpoczęcia studiów mieszkam w Krakowie.
-        <br />
-        <br />
-        Mogę pracować stacjonarnie, hybrydowo oraz zdalnie zarówno na pełny jak
-        i niepełny etat.
+        I can work stationary, hybrid and remotely (preferably), both full-time and part-time.
         <br />
         <br />
       </SectionText>
       <SectionDivider />
       <SectionTitle>
         <br />
-        Co jeszcze?
+        What else?
       </SectionTitle>
       <SectionText>
-        <br />- Współtwórca i główny betatester modyfikacji gry "Gothic 2:
-        Ucieczka" (podgląd{' '}
-        <GothicLink href='https://g2ucieczka.herokuapp.com' target='_blank'>
-          tutaj
+        <br />- Creator of guitar tabs ({' '}
+          <GothicLink href='https://www.ultimate-guitar.com/contribution/11629152-perroconpelos/tabs' target='_blank'>
+            my tabs
+          </GothicLink>
+        ) (2016-present)
+        <br />
+        <br />- Work as freelance for Intevolution in a computer vision project ({' '}
+        <GothicLink href='https://intevolution.ai' target='_blank'>
+          Intevolution page
+        </GothicLink>){' '}
+        (2021)
+        <br />
+        <br />- YouTube content creator (simulations, guitar covers, etc.) ({' '}
+        <GothicLink href='https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA' target='_blank'>
+        channel
         </GothicLink>
-        ) (2014-2019)
-        <br />
-        <br />- Praca jako wolontariusz w stowarzyszeniu:{' '}
-        <GothicLink href='https://www.polaris.org.pl' target='_blank'>
-          POLARIS - OPP
-        </GothicLink>{' '}
-        (2019)
-        <br />
-        <br />- Twórca filmów w jakości 4K (2160p) (podgląd{' '}
-        <GothicLink href='https://www.youtube.com/channel/UCLUrR7bodWNdt9G9YWeCIWA' target='_blank'>
-          tutaj
-        </GothicLink>
-        ) (2014-2021)
+        ) (2014-present)
         <br />
         <br />
-        - Prawo jazdy: kat. B<br />
-        <br />
-        - Język angielski: poz. C1
-        <br />
+        - English language: B1<br />
         <br />
         -
-        Zainteresowania:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Informatyka&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;E-sport&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Kolarstwo
+        Interests:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Science&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Graphics design
         <br />
         <br />
       </SectionText>
