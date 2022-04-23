@@ -55,6 +55,39 @@ export const SectionTitle = styled.h2`
   }
 `
 
+export const SectionTitle2 = styled.h2`
+  font-weight: 800;
+  font-size: ${(props) => props.main ? '65px' : '56px'};
+  line-height: ${(props) => props.main ? '72px' : '56px'};
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  padding: ${(props) => props.main ? '58px 0 16px' : '0'};
+  margin-top: -80px;
+
+  @media ${props => props.theme.breakpoints.md}{
+    font-size: ${(props) => props.main ? '56px' : '48px'};
+    line-height: ${(props) => props.main ? '56px' : '48px'};
+    margin-bottom: 12px;
+    margin-top: -60px;
+    padding: ${(props) => props.main ? '40px 0 12px' : '0'};
+  }
+
+  @media ${props => props.theme.breakpoints.sm}{
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => props.main ? '28px' : '32px'};
+    line-height: ${(props) => props.main ? '32px' : '40px'};
+    margin-bottom: 8px;
+    margin-top: -50px;
+    padding: ${(props) => props.main ? '16px 0 8px' : '0'};
+    max-width: 100%;
+  }
+`
+
 export const SectionText = styled.p`
   max-width: 800px;
   font-size: 24px;
@@ -65,6 +98,7 @@ export const SectionText = styled.p`
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
+    padding-right: ${(props) => props.hero ? '90px' : ''};
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 24px;
@@ -72,6 +106,7 @@ export const SectionText = styled.p`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 16px;
+    padding-right: ${(props) => props.hero ? '0px' : ''};
     line-height: 24px;
     padding-bottom: 16px;
   }

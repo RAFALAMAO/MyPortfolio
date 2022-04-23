@@ -4,12 +4,13 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
 const data = [
-  { number: 2020, text: 'Mechatronic engineering graduation'},
+  { number: 2021, text: 'Mechatronic eng. graduation'},
   { number: 2020, text: 'Working at Intevolution'},
 ];
 
 const Acomplishments = () => (
   <Section>
+    <SectionDivider divider/>
     <SectionTitle>Achievements</SectionTitle>
     <Boxes>
       {data.map((card, index) => (

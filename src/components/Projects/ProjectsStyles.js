@@ -28,7 +28,7 @@ export const GridContainer = styled.section`
 `;
 export const BlogCard = styled.div`
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 1px 3px 20px rgba(0, 191, 250, 0.2);
   text-align: center;
   width: 400px;
   /* @media ${() => props.theme.breakpoints.sm} {
@@ -40,7 +40,7 @@ export const BlogCard = styled.div`
   @media screen and (min-width: 768px) {
     transition: transform 0.2s ease-in-out;
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.06);
     }
   }
 `;
@@ -63,7 +63,9 @@ export const Hr = styled.hr`
   height: 3px;
   margin: 20px auto;
   border: 0;
+  border-radius: 20%;
   background: #d0bb57;
+  background: ${'linear-gradient(270deg, #6c42f5 0%, #13415c 100%)'};
 `;
 
 export const Intro = styled.div`
@@ -104,11 +106,12 @@ export const ExternalLinks = styled.a`
   color: #d4c0c0;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: #6b3030;
+  background:  ${'linear-gradient(45deg, #13415c 0%, #322aa1 100%)'};
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
-    background: #801414;
+    background: ${'linear-gradient(45deg, #2272a1 0%, #453ade 100%)'};
+    color: rgba(255, 255, 255)
   }
 `;
 
@@ -118,6 +121,6 @@ export const TagList = styled.ul`
   padding: 2rem;
 `;
 export const Tag = styled.li`
-  color: #d8bfbf;
+  color: #bfbfd8;
   font-size: 1.5rem;
 `;

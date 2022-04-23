@@ -39,7 +39,7 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2020, text: 'Working at Intevolution'},
-  { year: 2020, text: 'Mechatronic engineering graduation'},
+  { year: 2021, text: 'Mechatronic engineering graduation'},
   { year: 2021, text: 'Solutions for TMR (Torneo Mexicano de Robotica) 2021 tests'},
   { year: 2022, text: 'Participation in the CIRC (Congreso Internacional de Robótica y Computación ) 2022'},
 ];

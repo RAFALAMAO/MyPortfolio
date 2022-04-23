@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
+import BackgroundAnimation from '../BackgrooundAnimation/BackgroundAnimation2';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
@@ -11,8 +12,8 @@ const Hero = (props) => (
         <SectionTitle main center>
           Welcome to my portfolio!
         </SectionTitle>
-        <SectionText>
-        Aarón (RAFALAMAO) | Mechatronic engenieer, ROS and Full Stack Developer with technologies like JavaScript/React.
+        <SectionText hero>
+          Aarón (RAFALAMAO) | Mechatronic engenieer, ROS and Full Stack Developer with technologies like JavaScript/React.
         </SectionText>
         <a href="https://rafalamao.github.io/about/" target="_blank">
         <Button onClick={props.handleClick}>About Me</Button></a>

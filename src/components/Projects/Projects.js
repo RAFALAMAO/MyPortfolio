@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionTitle, SectionTitle2 } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import {GoLinkExternal} from 'react-icons/go';
 
@@ -9,8 +9,8 @@ import {GoLinkExternal} from 'react-icons/go';
 
 const Projects = () => (
   <Section nopadding id="projects">
-    <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionDivider divider />
+    <SectionTitle2 main>Projects</SectionTitle2>
     <GridContainer>
       {projects.map((p, i) => {
         return (
