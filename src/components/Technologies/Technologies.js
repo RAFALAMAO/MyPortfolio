@@ -14,7 +14,7 @@ const Technologies = () =>  (
       <strong>OS:</strong> Windows, Linux<br/><br/>
       <strong>Cloud:</strong> Azure, AWS<br/><br/>
       <strong>Other:</strong> AI (TensorFlow), Computer Vision (OpenCV)<br/><br/>
-      <strong>IDE:</strong> Visual Studio Code.
+      <strong>IDE:</strong> Visual Studio Code
     </SectionText>
     <List>
       <ListItem>
@@ -24,7 +24,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            More used:<br />
+            Most used:<br />
             React.js
           </ListParagraph>
         </ListContainer>
@@ -36,7 +36,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            More used:<br />
+            Most used:<br />
             Javascript
           </ListParagraph>
         </ListContainer>
@@ -48,7 +48,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>IDE</ListTitle>
           <ListParagraph>
-            More used:<br />
+            Most used:<br />
             Visual Studio Code
           </ListParagraph>
         </ListContainer>

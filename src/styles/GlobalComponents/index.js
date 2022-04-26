@@ -10,13 +10,18 @@ export const Section = styled.section`
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
+  color: #00abab;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    padding: 24px 48px 0;
+    // padding: 24px 48px 0;
+    // flex-direction: column;
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+
+    // width: calc(100vw - 32px);
     flex-direction: column;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => (props.theme.breakpoints.sm) } {
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
 
     width: calc(100vw - 32px);
