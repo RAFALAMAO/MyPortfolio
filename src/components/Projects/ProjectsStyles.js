@@ -5,6 +5,10 @@ export const Img = styled.img`
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+
+  // @media ${(props) => props.theme.breakpoints.sm} {
+  //   width: 80%;
+  // }
 `;
 
 export const GridContainer = styled.section`
@@ -25,6 +29,10 @@ export const GridContainer = styled.section`
     padding: 2rem;
     padding-bottom: 0; */
   /* } */
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: .5rem;
+  }
 `;
 export const BlogCard = styled.div`
   border-radius: 10px;
@@ -42,6 +50,10 @@ export const BlogCard = styled.div`
     &:hover {
       transform: scale(1.06);
     }
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
   }
 `;
 export const TitleContent = styled.div`

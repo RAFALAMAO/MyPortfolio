@@ -42,7 +42,7 @@ export const Box = styled.div`
     padding: 12px;
     
     &:nth-child(2n){
-      grid-row:2;
+      grid-row:1;
     }
   }
 `
