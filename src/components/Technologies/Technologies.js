@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiVisualstudio } from 'react-icons/di';
+import { DiJavascript1, DiReact, DiVisualstudio } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -31,7 +31,7 @@ const Technologies = () =>  (
       </ListItem>
       <ListItem>
         <picture>
-          <DiFirebase size="3rem" />
+          <DiJavascript1 size="3rem" />
         </picture>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
