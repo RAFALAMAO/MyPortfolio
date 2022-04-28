@@ -8,9 +8,9 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle>Skills</SectionTitle>
     <SectionText><br/>
-      <strong>Front-End:</strong> HTML, CSS, JavaScript, React, React Hooks, React Router, Next.js<br/><br/>
-      <strong>Back-End:</strong> Java, Python, C#, C++, C<br/><br/>
-      <strong>Mechatronics:</strong> ROS, Matlab, SolidWorks, LabView<br/><br/>
+      <strong>Front-End:</strong> HTML, CSS, JavaScript, React, React Hooks, React Router, Next.js, Framer Motion, Styled Components<br/><br/>
+      <strong>Back-End:</strong> Java, Node JS, Python, C#, C++, C<br/><br/>
+      <strong>Mechatronic:</strong> ROS, Matlab, SolidWorks, LabView<br/><br/>
       <strong>OS:</strong> Windows, Linux<br/><br/>
       <strong>Cloud:</strong> Azure, AWS<br/><br/>
       <strong>Other:</strong> AI (TensorFlow), Computer Vision (OpenCV)<br/><br/>
