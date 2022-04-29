@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import BackgroundAnimation from '../BackgrooundAnimation/BackgroundAnimation2';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (

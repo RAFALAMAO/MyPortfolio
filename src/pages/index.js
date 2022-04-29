@@ -7,15 +7,23 @@ import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
 import ScrollButton from '../styles/GlobalComponents/ScrollButton';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
     <>
       <Layout>
-        <Section grid>
-          <Hero />
-          <BgAnimation />
-        </Section>
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1}}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
+          <Section grid>
+            <Hero/>
+            <BgAnimation />
+          </Section>
+        </motion.div>
+
         <Projects />
         <Technologies />
         <Timeline />
