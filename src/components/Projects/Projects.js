@@ -9,47 +9,47 @@ import { useAnimation, useCycle } from 'framer-motion';
 
 function Projects(){
 
-  const animation = useAnimation();
-  const [handleShow, setHandleShow] = React.useState(false);
+  // const animation = useAnimation();
+  // const [handleShow, setHandleShow] = React.useState(false);
 
-  if (handleShow) {
-    animation.start({
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.8
-      }
-    })
-  } else {
-    animation.start({
-      x: '-200px',
-      opacity: 0,
-      transition: {
-        duration: 0.8,
-      }
-    })
-  }
+  // if (handleShow) {
+  //   animation.start({
+  //     x: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.8
+  //     }
+  //   })
+  // } else {
+  //   animation.start({
+  //     x: '-200px',
+  //     opacity: 0,
+  //     transition: {
+  //       duration: 0.8,
+  //     }
+  //   })
+  // }
 
-  React.useEffect(() => {
-    const listener = () => {
-      if (window.scrollY > 150) {
-        setHandleShow(true);
-      } else setHandleShow(false);
-    };
-    window.addEventListener("scroll", listener);
+  // React.useEffect(() => {
+  //   const listener = () => {
+  //     if (window.scrollY > 150) {
+  //       setHandleShow(true);
+  //     } else setHandleShow(false);
+  //   };
+  //   window.addEventListener("scroll", listener);
 
-    return () => {
-      window.removeEventListener("scroll", listener);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", listener);
+  //   };
+  // }, []);
 
   return(
     <Section nopadding id="projects">
       <SectionDivider divider />
       <SectionTitle2 main>Projects</SectionTitle2>
       <GridContainer
-        initial={{x: '-200px'}}
-        animate={animation}
+        // initial={{x: '-200px'}}
+        // animate={animation}
       >
         {projects.map((p, i) => {
           return (
