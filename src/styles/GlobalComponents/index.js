@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Section = styled.section`
@@ -29,7 +30,7 @@ export const Section = styled.section`
   }
 `
 
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled(motion.h2)`
   font-weight: 800;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
@@ -60,7 +61,7 @@ export const SectionTitle = styled.h2`
   }
 `
 
-export const SectionTitle2 = styled.h2`
+export const SectionTitle2 = styled(motion.h2)`
   font-weight: 800;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
@@ -117,13 +118,13 @@ export const SectionText = styled.p`
   }
 `
 
-export const SectionDivider = styled.div`
+export const SectionDivider = styled(motion.div)`
 
   width: 64px;
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
-  background: ${(props) => props.colorAlt ? 
+  background: ${(props) => props.colorAlt ?
     'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
     'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 

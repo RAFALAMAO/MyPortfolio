@@ -5,7 +5,8 @@ import { Section, SectionDivider, SectionTitle, SectionTitle2 } from '../../styl
 import { projects } from '../../constants/constants';
 import {GoLinkExternal} from 'react-icons/go';
 
-import { useAnimation, useCycle } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { animateTitle } from '../../utils/animateTitle';
 
 function Projects(){
 
@@ -42,42 +43,46 @@ function Projects(){
   //     window.removeEventListener("scroll", listener);
   //   };
   // }, []);
+  // Hoock used for get in view element information
+  const [ ref, inView, entry ] = useInView({threshold: .05});
 
   return(
     <Section nopadding id="projects">
-      <SectionDivider divider />
-      <SectionTitle2 main>Projects</SectionTitle2>
-      <GridContainer
-        // initial={{x: '-200px'}}
-        // animate={animation}
-      >
-        {projects.map((p, i) => {
-          return (
-            <BlogCard key={i}>
-            <Img src={p.image} />
-              <TitleContent>
-                <HeaderThree title>{p.title}</HeaderThree>
-                <Hr />
-              </TitleContent>
-              <CardInfo className="card-info">{p.description}</CardInfo>
-              <div>
-                {/* <TitleContent>Technologie</TitleContent> */}
-                <TagList>
-                  {p.tags.map((t, i) => {
-                    return <Tag key={i}>{t}</Tag>;
-                  })}
-                </TagList>
-              </div>
-              <UtilityList>
-                <ExternalLinks href={p.visit} target="_blank">Visit <GoLinkExternal size="1.3rem"/></ExternalLinks>
-                {
-                  p.source !== null ?  <ExternalLinks href={p.source} target="_blank">Code</ExternalLinks> : null
-                }
-              </UtilityList>
-            </BlogCard>
-          );
-        })}
-      </GridContainer>
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inView, entry)} divider/>
+      <SectionTitle2 initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inView, entry)} main>Projects</SectionTitle2>
+      <div ref={ref}>
+        <GridContainer
+          // initial={{x: '-200px'}}
+          // animate={animation}
+        >
+          {projects.map((p, i) => {
+            return (
+              <BlogCard key={i}>
+              <Img src={p.image} />
+                <TitleContent>
+                  <HeaderThree title>{p.title}</HeaderThree>
+                  <Hr />
+                </TitleContent>
+                <CardInfo className="card-info">{p.description}</CardInfo>
+                <div>
+                  {/* <TitleContent>Technologie</TitleContent> */}
+                  <TagList>
+                    {p.tags.map((t, i) => {
+                      return <Tag key={i}>{t}</Tag>;
+                    })}
+                  </TagList>
+                </div>
+                <UtilityList>
+                  <ExternalLinks href={p.visit} target="_blank">Visit <GoLinkExternal size="1.3rem"/></ExternalLinks>
+                  {
+                    p.source !== null ?  <ExternalLinks href={p.source} target="_blank">Code</ExternalLinks> : null
+                  }
+                </UtilityList>
+              </BlogCard>
+            );
+          })}
+        </GridContainer>
+      </div>
     </Section>
   )
 };

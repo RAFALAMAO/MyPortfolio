@@ -20,6 +20,9 @@ import {
 } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 
+import { useInView } from 'react-intersection-observer';
+import { animateTitle } from '../../utils/animateTitle';
+
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
@@ -64,58 +67,66 @@ const Timeline = () => {
     window.addEventListener('resize', handleResize);
   }, []);
 
+  // Hoock used for get in view element information
+  const [ refAbout, inViewAbout, entryAbout ] = useInView({threshold: .2});
+  const [ refElse, inViewElse, entryElse ] = useInView({threshold: .2});
+
   return (
     <Section id='about'>
-      <SectionDivider divider />
-      <SectionTitle>About</SectionTitle>
-      <SectionText>
-        <br />
-        Aarón&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAFALAMAO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26
-        yo
-        <br />
-        <br />
-        I’m a Mechatronic Engineer at UPIITA from México, I love development, music and graphical design.
-        <br />
-        <br />
-        I started with C / C ++, then Matlab, LabView, JavaScript, Python, C #, Java. Currently I am programming mainly in React technology.
-        <br />
-        <br />
-        I can work stationary, hybrid and remotely (preferably), both full-time and part-time.
-        <br />
-        <br />
-      </SectionText>
-      <SectionDivider />
-      <SectionTitle>
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inViewAbout, entryAbout)} divider />
+      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inViewAbout, entryAbout)}>About</SectionTitle>
+      <div ref={refAbout}>
+        <SectionText>
+          <br />
+          Aarón&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAFALAMAO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26
+          yo
+          <br />
+          <br />
+          I’m a Mechatronic Engineer at UPIITA from México, I love development, music and graphical design.
+          <br />
+          <br />
+          I started with C / C ++, then Matlab, LabView, JavaScript, Python, C #, Java. Currently I am programming mainly in React technology.
+          <br />
+          <br />
+          I can work stationary, hybrid and remotely (preferably), both full-time and part-time.
+          <br />
+          <br />
+        </SectionText>
+      </div>
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inViewElse, entryElse)}/>
+      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inViewElse, entryElse)}>
         <br />
         What else?
       </SectionTitle>
-      <SectionText>
-        <br />- Creator of guitar tabs ({' '}
-          <GothicLink href='https://www.ultimate-guitar.com/contribution/11629152-perroconpelos/tabs' target='_blank'>
-            my tabs
+      <div ref={refElse}>
+        <SectionText>
+          <br />- Creator of guitar tabs ({' '}
+            <GothicLink href='https://www.ultimate-guitar.com/contribution/11629152-perroconpelos/tabs' target='_blank'>
+              my tabs
+            </GothicLink>
+          ) (2016-present)
+          <br />
+          <br />- Work as freelance for Intevolution in a computer vision project ({' '}
+          <GothicLink href='https://intevolution.ai' target='_blank'>
+            Intevolution page
+          </GothicLink>){' '}
+          (2021)
+          <br />
+          <br />- YouTube content creator (simulations, guitar covers, etc.) ({' '}
+          <GothicLink href='https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA' target='_blank'>
+          channel
           </GothicLink>
-        ) (2016-present)
-        <br />
-        <br />- Work as freelance for Intevolution in a computer vision project ({' '}
-        <GothicLink href='https://intevolution.ai' target='_blank'>
-          Intevolution page
-        </GothicLink>){' '}
-        (2021)
-        <br />
-        <br />- YouTube content creator (simulations, guitar covers, etc.) ({' '}
-        <GothicLink href='https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA' target='_blank'>
-        channel
-        </GothicLink>
-        ) (2014-present)
-        <br />
-        <br />
-        - English language: B1<br />
-        <br />
-        -
-        Interests:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Science&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Graphics design
-        <br />
-        <br />
-      </SectionText>
+          ) (2014-present)
+          <br />
+          <br />
+          - English language: B1<br />
+          <br />
+          -
+          Interests:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Science&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Graphics design
+          <br />
+          <br />
+        </SectionText>
+      </div>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
