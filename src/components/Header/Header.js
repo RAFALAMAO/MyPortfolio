@@ -8,7 +8,7 @@ import { Container, Div1, Div2, Div3, NavLink, ShowCase, SocialIcons } from './H
 const Header = () =>  (
   <Container>
     <Div1>
-        <a style={{ display: 'flex', alignItems: 'center', color:"white" }} href=".">
+        <a style={{ display: 'flex', alignItems: 'center', color:"white" }} href="https://rafalamao.github.io/about/#">
           {/* <DiCssdeck size="3rem" /> */}
           <img style={{position:"relative", width:"2rem", height:"auto"}} src="./images/r/r.png" ></img>
           <ShowCase style={{color: 'rgb(49,165,202)' }}>AFALAMAO</ShowCase>
