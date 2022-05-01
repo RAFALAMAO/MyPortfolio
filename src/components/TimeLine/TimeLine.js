@@ -85,6 +85,13 @@ const Timeline = () => {
           I’m a Mechatronic Engineer at UPIITA from México, I love development, music and graphical design.
           <br />
           <br />
+          I worked one year and a half at Intevolution developing
+          intelligent bots with Javascript, Azure and programing simple
+          front-end interfaces. I made my social service and engineering
+          final work at CINVESTAV Zacatenco developing with ROS some
+          computer vision and mobile robot control nodes.
+          <br />
+          <br />
           I started with C / C ++, then Matlab, LabView, JavaScript, Python, C #, Java. Currently I am programming mainly in React technology.
           <br />
           <br />
@@ -119,10 +126,13 @@ const Timeline = () => {
           ) (2014-present)
           <br />
           <br />
-          - English language: B1<br />
+          - Languages:&nbsp;&nbsp;English (B1)&nbsp;&nbsp;|&nbsp;&nbsp;Spanish (Native)<br />
+          <br />
+          - Strengths:&nbsp;&nbsp;Ingenuity&nbsp;&nbsp;|&nbsp;&nbsp;Ambitiony&nbsp;&nbsp;|&nbsp;&nbsp;Responsibility&nbsp;&nbsp;|&nbsp;&nbsp;Punctuality<br />
           <br />
           -
-          Interests:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Science&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Graphics design
+          Interests:&nbsp;&nbsp;Music&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Science&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Graphics design
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Technological development&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;AI
           <br />
           <br />
         </SectionText>

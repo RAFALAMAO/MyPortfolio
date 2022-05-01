@@ -14,8 +14,8 @@ const Hero = (props) => (
         <SectionText hero>
           Aarón (RAFALAMAO) | Mechatronic engineer, ROS, computer vision, IA and full stack developer.
         </SectionText>
-        <a href="https://rafalamao.github.io/about/" target="_blank">
-        <Button onClick={props.handleClick}>About Me</Button></a>
+        <a href="./documents/Aarón_Juárez_CV.pdf" download="" >
+        <Button onClick={props.handleClick}>Download CV</Button></a>
       </LeftSection>
     </Section>
   </>

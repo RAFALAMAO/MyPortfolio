@@ -23,7 +23,7 @@ export const projects = [
       image: 'https://github.com/RAFALAMAO/hector-quadrotor-noetic/raw/main/imgs/gif.GIF',
       tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/hector-quadrotor-noetic',
-    visit: 'https://rafalamao.github.io/hector-ros-noetic/',
+    visit: null,
     id: 2,
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
       image: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC/raw/main/images/ORB_SLAM2.gif',
       tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC',
-    visit: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC',
+    visit: null,
     id: 3,
   },
   {
@@ -41,7 +41,7 @@ export const projects = [
       image: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC/raw/main/images/ORB_SLAM3.gif',
       tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC',
-    visit: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC',
+    visit: null,
     id: 4,
   }
 ];

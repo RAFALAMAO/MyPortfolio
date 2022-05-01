@@ -73,7 +73,9 @@ function Projects(){
                   </TagList>
                 </div>
                 <UtilityList>
-                  <ExternalLinks href={p.visit} target="_blank">Visit <GoLinkExternal size="1.3rem"/></ExternalLinks>
+                  {
+                    p.visit !== null ?  <ExternalLinks href={p.visit} target="_blank">Visit <GoLinkExternal size="1.3rem"/></ExternalLinks> : null
+                  }
                   {
                     p.source !== null ?  <ExternalLinks href={p.source} target="_blank">Code</ExternalLinks> : null
                   }
