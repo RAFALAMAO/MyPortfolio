@@ -26,7 +26,8 @@ export const Section = styled.section`
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
 
     width: calc(100vw - 32px);
-    flex-direction: column;
+    flex-direction:  ${(props) => props.hero ? "row" : "column" } ;
+    display:  ${(props) => props.hero ? "flex" : "" } ;
   }
 `
 

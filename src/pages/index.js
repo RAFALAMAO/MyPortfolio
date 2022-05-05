@@ -18,9 +18,9 @@ const Home = () => {
           animate={{ y: 0, opacity: 1}}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <Section grid>
+          <Section grid hero>
             <Hero/>
-            <BgAnimation />
+            <BgAnimation/>
           </Section>
         </motion.div>
 

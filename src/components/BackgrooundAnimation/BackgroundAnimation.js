@@ -1,7 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Div = styled.div`
+  @media ${(props) => (props.theme.breakpoints.sm) } {
+    margin-left: -40%;
+    width: 40%;
+  }
+`;
 
 const BackgroundAnimation = () => (
-  <div>
+  <Div>
     <svg
       className="BgAnimation__svg"
       viewBox="0 0 602 602"
@@ -359,7 +367,7 @@ const BackgroundAnimation = () => (
         </linearGradient>
       </defs>
     </svg>
-  </div>
+  </Div>
 );
 
 export default BackgroundAnimation;
