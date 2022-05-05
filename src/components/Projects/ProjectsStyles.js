@@ -46,10 +46,18 @@ export const BlogCard = styled.div`
   @media screen and (min-width: 576px) {
     width: 100%;
   }
+  /* @media screen and (min-width: 768px) { */
   @media screen and (min-width: 768px) {
     transition: transform 0.2s ease-in-out;
     &:hover {
       transform: scale(1.06);
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.015);
     }
   }
 
@@ -102,6 +110,9 @@ export const CardInfo = styled.p`
     padding:.3rem */
 
   /* } */
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0 20px;
+  }
   @media screen and (min-width: 576px) {
     padding: 1.5rem;
   }
