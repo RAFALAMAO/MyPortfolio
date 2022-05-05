@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaArrowCircleUp } from 'react-icons/fa';
+import { HiOutlineArrowCircleUp } from 'react-icons/hi';
 import { Button } from './ScrollButtonStyles';
 
 const ScrollButton = () => {
@@ -29,7 +29,7 @@ const ScrollButton = () => {
 
   return (
     <Button>
-      <FaArrowCircleUp
+      <HiOutlineArrowCircleUp
         onClick={scrollToTop}
         style={{ display: visible ? 'inline' : 'none' }}
       />
