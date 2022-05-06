@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
-  background: #0f1624;
+  background: transparent;
   padding: 0rem;
   list-style: none;
   display: flex;
@@ -31,6 +31,7 @@ export const CarouselContainer = styled.ul`
     margin-bottom: 8px;
   }
 `;
+
 export const CarouselMobileScrollNode = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
@@ -39,7 +40,7 @@ export const CarouselMobileScrollNode = styled.div`
 `;
 
 export const CarouselItem = styled.div`
-  background: #0f1624;
+  background: #02041e;
   border-radius: 3px;
   max-width: 196px;
 
@@ -50,7 +51,7 @@ export const CarouselItem = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 32px;
     min-width: 120px;
-    background: #0e131f;
+    background: #02041e;
     padding: 4px;
     align-content: start;
     scroll-snap-align: start;
@@ -91,6 +92,7 @@ export const CarouselItemTitle = styled.h4`
     line-height: 24px;
   }
 `;
+
 export const CarouselItemImg = styled.svg`
   margin-left: 21px;
   -webkit-mask-image: linear-gradient(
@@ -125,6 +127,7 @@ export const CarouselItemText = styled.p`
     padding-right: 0;
   }
 `;
+
 export const CarouselButtons = styled.div`
   width: 288px;
 
