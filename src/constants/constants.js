@@ -5,8 +5,7 @@ export const projects = [
       image: '/images/projects/Orbslam3d.png',
       tags: ['React', 'Plotly', 'Axios', 'Framer-Motion'],
     source: 'https://github.com/RAFALAMAO/react-slam-page/tree/master',
-    visit: 'https://rafalamao.github.io/react-slam-page/',
-    id: 0,
+    visit: 'https://rafalamao.github.io/react-slam-page/'
   },
   {
     title: 'Virtual Assistant',
@@ -14,8 +13,7 @@ export const projects = [
       image: '/images/projects/BotSeg.png',
       tags: ['JavaScript', 'Azure'],
     source: null,
-    visit: 'https://www.seg.guanajuato.gob.mx/SitePages/Home.aspx',
-    id: 1,
+    visit: 'https://www.seg.guanajuato.gob.mx/SitePages/Home.aspx'
   },
   {
     title: 'Hector Quadrotor Port',
@@ -23,8 +21,7 @@ export const projects = [
       image: 'https://github.com/RAFALAMAO/hector-quadrotor-noetic/raw/main/imgs/gif.GIF',
       tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/hector-quadrotor-noetic',
-    visit: null,
-    id: 2,
+    visit: null
   },
   {
     title: 'ORBSLAM2 Ubuntu 20 Port',
@@ -32,8 +29,7 @@ export const projects = [
       image: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC/raw/main/images/ORB_SLAM2.gif',
       tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC',
-    visit: null,
-    id: 3,
+    visit: null
   },
   {
     title: 'ORBSLAM3 Ubuntu 20 Port',
@@ -41,8 +37,7 @@ export const projects = [
       image: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC/raw/main/images/ORB_SLAM3.gif',
       tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC',
-    visit: null,
-    id: 4,
+    visit: null
   }
 ];
 
