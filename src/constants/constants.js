@@ -1,9 +1,17 @@
 export const projects = [
   {
+    title: 'Framer Motion SVG',
+    description: "Simple app using Framer Motion to animate SVG content and simple use of React routers. Warning: it can be a lot of work for your mobile or PC, just a joke... or not?.",
+      image: '/images/projects/framerMotionApp.png',
+      tags: ['React', 'FramerM', 'StyledC'],
+    source: 'https://github.com/RAFALAMAO/framer-motion-app',
+    visit: 'https://rafalamao.github.io/framer-motion-app/'
+  },
+  {
     title: 'ORBSLAM2 3D Map Plotter',
     description: "Web page made with ReactJs that has the objective of graphing a 3D point cloud hosted in a GitHub repository, data was generated with ORBSLAM2.",
       image: '/images/projects/Orbslam3d.png',
-      tags: ['React', 'Plotly', 'Axios', 'Framer-Motion'],
+      tags: ['React', 'Plotly', 'Axios', 'FramerM', 'StyledC'],
     source: 'https://github.com/RAFALAMAO/react-slam-page/tree/master',
     visit: 'https://rafalamao.github.io/react-slam-page/'
   },
