@@ -42,7 +42,7 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="#0d0e21"></meta>
         </Head>
         <body style={{
-            backgroundImage: "url('/images/background/bgHead666.jpg'), url('/images/background/bgBody666.jpg')",
+            backgroundImage: "url('/images/background/bgHead666.jpg'), url('/images/background/bgBody6666.jpg')",
             backgroundRepeat: 'no-repeat, repeat',
             backgroundSize: 'contain, contain',
           }}>
