@@ -1,8 +1,9 @@
-# Moje portfolio
+# My portfolio: 
+https://my-portfolio-rafalamao.vercel.app/
 
-## Wykorzystano technologie React.js oraz Next.js
+## Developed with React.js and Next.js
 
-### Strona jest w pełni responsywna (można odpalić na każdym urządzeniu o dowolnej rozdzielczości bez żadnych błędów)
+### I use Maciej Grochowski's template, you can take a look in:
 https://groch-maciek.vercel.app
 
-![image](https://user-images.githubusercontent.com/95743795/162827445-93aa3bdc-701a-4dd8-8d28-2931c9cd33d9.png)
+![image](https://github.com/RAFALAMAO/MyPortfolio/raw/master/public/images/ScreenShoot.png)
