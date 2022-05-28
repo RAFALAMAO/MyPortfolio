@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     title: 'Tech News',
-    description: "basic website template made with HTML, CSS and JavaScript to show technology news like AI, web development, etc. with responsive content.",
+    description: "Basic website template made with HTML, CSS and JavaScript to show technology news like AI, web development, etc. with responsive content.",
       image: '/images/projects/SimpleHTML.png',
       tags: ['HTML', 'CSS', 'JavasCript'],
     source: 'https://github.com/RAFALAMAO/html-tech-news',
