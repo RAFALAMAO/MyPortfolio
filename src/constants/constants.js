@@ -18,7 +18,7 @@ export const projects = [
   {
     title: 'Framer Motion SVG',
     description: "Simple app using Framer Motion to animate SVG content and simple use of React routers. Warning: it can be a lot of work for your mobile or PC, just a joke... or not?.",
-      image: '/images/projects/framerMotionApp.png',
+      image: '/images/projects/framerMotionApp.gif',
       tags: ['React', 'FramerM', 'StyledC'],
     source: 'https://github.com/RAFALAMAO/framer-motion-app',
     visit: 'https://rafalamao.github.io/framer-motion-app/'
