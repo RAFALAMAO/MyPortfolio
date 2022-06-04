@@ -18,10 +18,10 @@ function Technologies () {
 
       <div ref={ref}>
         <SectionText><br/>
-          <strong>Front-End:</strong> HTML, CSS, JavaScript, React, React Hooks, React Router, Next.js, Framer Motion, Styled Components<br/><br/>
-          <strong>Back-End:</strong> Java, Node JS, Python, C#, C++, C<br/><br/>
+          <strong>Front-End:</strong> HTML, CSS, JavaScript, React.js, React Hooks, React Router, Next.js, Framer Motion, Styled Components<br/><br/>
+          <strong>Back-End:</strong> JavaScript, Node JS, Python, C++, C, MySQL<br/><br/>
           <strong>Mechatronic:</strong> ROS, Matlab, SolidWorks, LabView<br/><br/>
-          <strong>OS:</strong> Windows, Linux<br/><br/>
+          <strong>OS:</strong> Linux, Windows<br/><br/>
           <strong>Cloud:</strong> Azure, AWS<br/><br/>
           <strong>Other:</strong> AI (TensorFlow), Computer Vision (OpenCV)<br/><br/>
           <strong>IDE:</strong> Visual Studio Code
