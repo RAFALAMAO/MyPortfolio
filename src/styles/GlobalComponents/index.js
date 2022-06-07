@@ -37,7 +37,10 @@ export const SectionTitle = styled(motion.h2)`
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: ${(props) => props.Principal ?
+    'linear-gradient(121.57deg, rgba(55, 255, 255, 0.9) 18.77%, rgba(100, 100, 255, 0.66) 60.15%)' :
+    'linear-gradient(121.57deg, rgba(100, 100, 255, 0.9) 8.77%, rgba(5, 255, 255, 0.66) 60.15%)'};
+  /* background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
@@ -68,7 +71,7 @@ export const SectionTitle2 = styled(motion.h2)`
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: linear-gradient(121.57deg, rgba(100, 100, 255, 0.9) 8.77%, rgba(5, 255, 255, 0.66) 60.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 export const Img = styled.img`
   width: 100%;
   height: 100%;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
   overflow: hidden;
 
@@ -36,8 +37,11 @@ export const GridContainer = styled(motion.section)`
   }
 `;
 export const BlogCard = styled.div`
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 1px 3px 20px rgba(0, 191, 250, 0.2);
+  background: rgba(5, 5, 10, 0.8);
+  border-bottom: solid 1px rgba(5, 50, 50);
+
   text-align: center;
   width: 400px;
   /* @media ${() => props.theme.breakpoints.sm} {
