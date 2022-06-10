@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'VitReact College',
     description: `In this web application you can login as a Student or Teacher and CRUD information.
-    This project have its own REST API Back-End developed with NodeJs, Express and MySLQ.`,
+    This project has its own REST API Back-End developed with NodeJs, Express and MySLQ.`,
       image: '/images/projects/vitReact.png',
       tags: ['Vite', 'React', 'Hooks', 'Back-End'],
     source: 'https://github.com/RAFALAMAO/front-end-colegio/tree/master',
