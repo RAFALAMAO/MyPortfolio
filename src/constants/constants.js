@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'VitReact College',
+    description: `In this web application you can login as a Student or Teacher and CRUD information.
+    This project have its own REST API Back-End developed in NodeJs with a MySLQ database.`,
+      image: '/images/projects/vitReact.png',
+      tags: ['Vite', 'React', 'Hooks', 'Back-End'],
+    source: 'https://github.com/RAFALAMAO/front-end-colegio/tree/master',
+    visit: 'https://rafalamao.github.io/front-end-colegio/'
+  },
+  {
     title: 'Movie Flix',
     description: "App made with ReactJs. It's just a simple consumption of an API to get and show movie information, also a virtual assitant that sends you movie information in real time.",
       image: '/images/projects/MoviesFlix.png',
