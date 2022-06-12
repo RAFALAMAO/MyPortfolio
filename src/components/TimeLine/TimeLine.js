@@ -92,7 +92,7 @@ const Timeline = () => {
           computer vision and mobile robot control nodes.
           <br />
           <br />
-          I started with C / C ++, then Matlab, LabView, JavaScript, Python, C #, Java. Currently I am programming mainly in React technology.
+          I started with C / C ++, then Matlab, LabView, JavaScript, Python. Currently I am programming mainly in React and NodeJS technology.
           <br />
           <br />
           I can work stationary, hybrid and remotely (preferably), both full-time and part-time.
