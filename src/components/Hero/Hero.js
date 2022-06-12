@@ -8,14 +8,15 @@ const Hero = (props) => (
   <>
     <Section row nopadding>
       <LeftSection>
-        <SectionTitle main center Principal>
+        <SectionTitle $main $principal>
           Welcome to my portfolio!
         </SectionTitle>
         <SectionText hero>
           Aarón (RAFALAMAO) | Mechatronic engineer, ROS, computer vision, IA and full stack developer.
         </SectionText>
-        <a href="./documents/Aarón_Juárez_CV.pdf" download="" >
-        <Button onClick={props.handleClick}>Download CV</Button></a>
+        <a href="./documents/Aarón_Juárez_CV.pdf">
+          <Button onClick={props.handleClick}>Download CV</Button>
+        </a>
       </LeftSection>
     </Section>
   </>

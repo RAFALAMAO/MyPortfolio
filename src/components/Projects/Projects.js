@@ -48,8 +48,8 @@ function Projects(){
 
   return(
     <Section nopadding id="projects">
-      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inView, entry)} divider/>
-      <SectionTitle2 initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inView, entry)} main>Projects</SectionTitle2>
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inView, entry)} $divider/>
+      <SectionTitle2 initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inView, entry)} $main>Projects</SectionTitle2>
       <div ref={ref}>
         <GridContainer
           // initial={{x: '-200px'}}
@@ -60,7 +60,7 @@ function Projects(){
               <BlogCard key={i}>
               <Img src={p.image} />
                 <TitleContent>
-                  <HeaderThree title>{p.title}</HeaderThree>
+                  <HeaderThree $title>{p.title}</HeaderThree>
                   <Hr />
                 </TitleContent>
                 <CardInfo className="card-info">{p.description}</CardInfo>

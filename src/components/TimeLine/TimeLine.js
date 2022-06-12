@@ -73,7 +73,7 @@ const Timeline = () => {
 
   return (
     <Section id='about'>
-      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inViewAbout, entryAbout)} divider />
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inViewAbout, entryAbout)} $divider />
       <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inViewAbout, entryAbout)}>About</SectionTitle>
       <div ref={refAbout}>
         <SectionText>
@@ -129,12 +129,13 @@ const Timeline = () => {
           ) (2014-present)
           <br />
           <br />
-          - Languages:&nbsp;&nbsp;English (B1)&nbsp;&nbsp;|&nbsp;&nbsp;Spanish (Native)<br />
+          - Languages:&nbsp;&nbsp;English (B1)&nbsp;&nbsp;|&nbsp;&nbsp;Spanish (Native)
           <br />
-          - Strengths:&nbsp;&nbsp;Ingenuity&nbsp;&nbsp;|&nbsp;&nbsp;Ambitiony&nbsp;&nbsp;|&nbsp;&nbsp;Responsibility&nbsp;&nbsp;|&nbsp;&nbsp;Punctuality<br />
           <br />
-          -
-          Interests:&nbsp;&nbsp;Music&nbsp;&nbsp;|&nbsp;&nbsp;Science&nbsp;&nbsp;|&nbsp;&nbsp;Graphic design&nbsp;&nbsp;|&nbsp;&nbsp;Technological development&nbsp;&nbsp;|&nbsp;&nbsp;AI
+          - Strengths:  &nbsp;Ingenuity &nbsp;|&nbsp; Ambitiony &nbsp;|&nbsp; Responsibility &nbsp;|&nbsp; Punctuality
+          <br />
+          <br />
+          - Interests:&nbsp;&nbsp;Music&nbsp;&nbsp;|&nbsp;&nbsp;Science&nbsp;&nbsp;|&nbsp;&nbsp;Graphic design&nbsp;&nbsp;|&nbsp;&nbsp;Technological development&nbsp;&nbsp;|&nbsp;&nbsp;AI
           <br />
           <br />
         </SectionText>

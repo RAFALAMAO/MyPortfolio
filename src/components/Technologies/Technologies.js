@@ -13,7 +13,7 @@ function Technologies () {
 
   return (
     <Section id="skills">
-      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inView, entry)} divider />
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inView, entry)} $divider />
       <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inView, entry)}>Skills</SectionTitle>
 
       <div ref={ref}>
