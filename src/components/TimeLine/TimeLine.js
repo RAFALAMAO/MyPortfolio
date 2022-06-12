@@ -107,21 +107,24 @@ const Timeline = () => {
       </SectionTitle>
       <div ref={refElse}>
         <SectionText>
-          <br />- Creator of guitar tabs ({' '}
-            <GothicLink href='https://www.ultimate-guitar.com/contribution/11629152-perroconpelos/tabs' target='_blank'>
-              my tabs
+          <br />- Creator of guitar tabs (
+            <GothicLink href='https://www.ultimate-guitar.com/contribution/72518755-RAFALAMAO/tabs' target='_blank'>
+              My tabs
             </GothicLink>
-          ) (2016-present)
+            &nbsp;or&nbsp;
+            <GothicLink href='https://www.ultimate-guitar.com/u/RAFALAMAO' target='_blank'>
+              UG profile
+            </GothicLink>) (2016-present)
           <br />
-          <br />- Work as freelance for Intevolution in a computer vision project ({' '}
+          <br />- Project as freelance with Intevolution in a computer vision project (
           <GothicLink href='https://intevolution.ai' target='_blank'>
-            Intevolution page
+            Intevolution
           </GothicLink>){' '}
           (2021)
           <br />
-          <br />- YouTube content creator (simulations, guitar covers, etc.) ({' '}
+          <br />- YouTube content creator (ROS simulations, guitar covers, etc.) (
           <GothicLink href='https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA' target='_blank'>
-          channel
+          Channel
           </GothicLink>
           ) (2014-present)
           <br />
@@ -131,8 +134,7 @@ const Timeline = () => {
           - Strengths:&nbsp;&nbsp;Ingenuity&nbsp;&nbsp;|&nbsp;&nbsp;Ambitiony&nbsp;&nbsp;|&nbsp;&nbsp;Responsibility&nbsp;&nbsp;|&nbsp;&nbsp;Punctuality<br />
           <br />
           -
-          Interests:&nbsp;&nbsp;Music&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Science&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Graphics design
-          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Technological development&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;AI
+          Interests:&nbsp;&nbsp;Music&nbsp;&nbsp;|&nbsp;&nbsp;Science&nbsp;&nbsp;|&nbsp;&nbsp;Graphic design&nbsp;&nbsp;|&nbsp;&nbsp;Technological development&nbsp;&nbsp;|&nbsp;&nbsp;AI
           <br />
           <br />
         </SectionText>
