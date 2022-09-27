@@ -17,7 +17,7 @@ function Technologies () {
       <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inView, entry)}>Skills</SectionTitle>
 
       <div ref={ref}>
-        <SectionText><br/>
+        <SectionText $skills><br/>
           <strong>Front-End:</strong> HTML, CSS, JavaScript, React.js, React Hooks, React Router, Next.js, Framer Motion, Styled Components<br/><br/>
           <strong>Back-End:</strong> JavaScript, Node JS, Python, C++, C, MySQL<br/><br/>
           <strong>Mechatronic:</strong> ROS, Matlab, SolidWorks, LabView<br/><br/>

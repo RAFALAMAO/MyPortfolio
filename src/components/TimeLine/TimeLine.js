@@ -82,17 +82,20 @@ const Timeline = () => {
           yo
           <br />
           <br />
-          I’m a Mechatronic Engineer at UPIITA from México, I love development, music and graphical design.
+          I’m a Mechatronic Engineer graduated from UPIITA of IPN México, I love development, music and graphical design.
+          <br />
+          <br />
+          I started with C / C ++, then Matlab, LabView, Python and JavaScript. Currently I am programming mainly in React and NodeJS technology.
           <br />
           <br />
           I worked one year and a half at Intevolution developing
-          intelligent bots with Javascript, Azure and programing simple
+          intelligent bots with Javascript, Azure services and programing simple
           front-end interfaces. I made my social service and engineering
           final work at CINVESTAV Zacatenco developing with ROS some
           computer vision and mobile robot control nodes.
           <br />
           <br />
-          I started with C / C ++, then Matlab, LabView, Python and JavaScript. Currently I am programming mainly in React and NodeJS technology.
+          I'm currently working for a Mexican company called The Rocket Code as a full stack developer.
           <br />
           <br />
           I can work stationary, hybrid and remotely (preferably), both full-time and part-time.
@@ -135,7 +138,7 @@ const Timeline = () => {
           - Strengths:  &nbsp;Ingenuity &nbsp;|&nbsp; Ambitiony &nbsp;|&nbsp; Responsibility &nbsp;|&nbsp; Punctuality
           <br />
           <br />
-          - Interests:&nbsp;&nbsp;Music&nbsp;&nbsp;|&nbsp;&nbsp;Science&nbsp;&nbsp;|&nbsp;&nbsp;Graphic design&nbsp;&nbsp;|&nbsp;&nbsp;Technological development&nbsp;&nbsp;|&nbsp;&nbsp;AI
+          - Interests:&nbsp;&nbsp;AI&nbsp;&nbsp;|&nbsp;&nbsp;Music&nbsp;&nbsp;|&nbsp;&nbsp;Graphic design&nbsp;&nbsp;|&nbsp;&nbsp;Technological development&nbsp;&nbsp;|&nbsp;&nbsp;Science
           <br />
           <br />
         </SectionText>

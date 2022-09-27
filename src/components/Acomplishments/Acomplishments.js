@@ -7,8 +7,9 @@ import { useInView } from 'react-intersection-observer';
 import { animateTitle } from '../../utils/animateTitle';
 
 const data = [
+  { number: 2022, text: 'Hiring on The Rocket Code'},
   { number: 2021, text: 'Mechatronic eng. graduation'},
-  { number: 2020, text: 'Working at Intevolution'}
+  { number: 2020, text: 'Hiring on Intevolution'},
 ];
 
 function Acomplishments() {

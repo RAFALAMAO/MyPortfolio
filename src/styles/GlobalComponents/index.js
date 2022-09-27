@@ -104,10 +104,13 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(240, 240, 255, 0.63);
   /* text-align: justify;
   text-justify: inter-word; */
 
+  & strong {
+    color: ${(props) => props.$skills ? 'rgba(160, 160, 235, 0.7);' : 'rgba(255, 255, 255, 0.7)'};
+  }
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     padding-right: ${(props) => props.hero ? '90px' : ''};

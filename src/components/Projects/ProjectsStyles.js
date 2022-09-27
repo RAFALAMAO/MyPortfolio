@@ -39,7 +39,7 @@ export const GridContainer = styled(motion.section)`
 export const BlogCard = styled.div`
   border-radius: 20px;
   box-shadow: 1px 3px 20px rgba(0, 191, 250, 0.2);
-  background: rgba(5, 5, 10, 0.8);
+  background: rgba(5, 5, 6, 0.0);
   border-bottom: solid 1px rgba(5, 50, 50);
 
   text-align: center;
@@ -52,16 +52,24 @@ export const BlogCard = styled.div`
   }
   /* @media screen and (min-width: 768px) { */
   @media screen and (min-width: 768px) {
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:hover {
-      transform: scale(1.06);
+      transform: scale(1.04);
+      border-radius: 20px 20px 50px 0px;
+      box-shadow: ${(props) => `1px 3px 20px rgba(${props.$color}, .5)`};
+      background: rgba(0, 0, 0, .3);
+      border-bottom: ${(props) => `solid 1px rgb(${props.$color})`}
     }
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:hover {
       transform: scale(1.015);
+      border-radius: 20px 20px 50px 0px;
+      box-shadow: ${(props) => `1px 3px 20px rgba(${props.$color}, .5)`};
+      background: rgba(0, 0, 0, .8);
+      border-bottom: ${(props) => `solid 1px rgb(${props.$color})`}
     }
   }
 
@@ -69,6 +77,34 @@ export const BlogCard = styled.div`
     width: 100%;
   }
 `;
+
+export const FlyShip = styled('div')`
+  opacity:0.2;
+  color: white;
+  /* @media screen and (min-width: 768px) { */
+  @media screen and (min-width: 768px) {
+    transition: all 1.5s ease-in-out;
+    ${BlogCard}:hover &{
+      transform: translateX(210px);
+      color: ${(props) => `rgb(${props.$colorShip})`};
+      opacity: 1;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    transition: all 2s ease-in-out;
+    ${BlogCard}:hover &{
+      transform: translateX(210px);
+      color: ${(props) => `rgb(${props.$colorShip})`};
+      opacity: .9;
+    }
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
+`
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;

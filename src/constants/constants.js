@@ -1,12 +1,11 @@
 export const projects = [
   {
-    title: 'VitReact College',
-    description: `In this web application you can login as a Student or Teacher and CRUD information.
-    This project has its own REST API Back-End developed with NodeJs, Express and MySLQ.`,
-      image: '/images/projects/vitReact.png',
-      tags: ['Vite', 'React', 'Hooks', 'Back-End'],
-    source: 'https://github.com/RAFALAMAO/front-end-colegio/tree/master',
-    visit: 'https://rafalamao.github.io/front-end-colegio/'
+    title: 'Lendinc',
+    description: "Web page made with ReactJs (front), MySql (back) that has the objective of registering new customers to grant credit according to different business rules.",
+      image: '/images/projects/lendinc.png',
+      tags: ['React', 'Bot', 'Hooks', 'Fetch'],
+    source: null,
+    visit: 'https://lendinc.mx'
   },
   {
     title: 'Movie Flix',
@@ -25,6 +24,15 @@ export const projects = [
     visit: 'https://rafalamao.github.io/react-slam-page/'
   },
   {
+    title: 'VitReact College',
+    description: `In this web application you can login as a Student or Teacher and CRUD information.
+    This project has its own REST API Back-End developed with NodeJs, Express and MySLQ.`,
+      image: '/images/projects/vitReact.png',
+      tags: ['Vite', 'React', 'Hooks', 'Back-End'],
+    source: 'https://github.com/RAFALAMAO/front-end-colegio/tree/master',
+    visit: 'https://rafalamao.github.io/front-end-colegio/'
+  },
+  {
     title: 'Framer Motion SVG',
     description: "Simple app using Framer Motion to animate SVG content and simple use of React routers. Warning: it can be a lot of work for your mobile or PC, just a joke... or not?.",
       image: '/images/projects/framerMotionApp.gif',
@@ -40,14 +48,14 @@ export const projects = [
     source: null,
     visit: 'https://www.seg.guanajuato.gob.mx/SitePages/Home.aspx'
   },
-  {
-    title: 'Tech News',
-    description: "Basic website template made with HTML, CSS and JavaScript to show technology news like AI, web development, etc. with responsive content.",
-      image: '/images/projects/SimpleHTML.png',
-      tags: ['HTML', 'CSS', 'JavasCript'],
-    source: 'https://github.com/RAFALAMAO/html-tech-news',
-    visit: 'https://rafalamao.github.io/html-tech-news/'
-  },
+  // {
+  //   title: 'Tech News',
+  //   description: "Basic website template made with HTML, CSS and JavaScript to show technology news like AI, web development, etc. with responsive content.",
+  //     image: '/images/projects/SimpleHTML.png',
+  //     tags: ['HTML', 'CSS', 'JavasCript'],
+  //   source: 'https://github.com/RAFALAMAO/html-tech-news',
+  //   visit: 'https://rafalamao.github.io/html-tech-news/'
+  // },
   {
     title: 'Hector Quadrotor Port',
     description: "Due hector quadrotor (drone simulator) only works on ROS melodic version, I generated a port to work with ROS Noetic.",
@@ -75,8 +83,10 @@ export const projects = [
 ];
 
 export const TimeLineData = [
+  { year: 2022, text: 'Article published in Pädi Boletín Científico de Ciencias Básicas e Ingenierías del ICBI 2022'},
+  { year: 2022, text: 'Hiring on The Rocket Code as a full stack developer'},
   { year: 2022, text: 'Participation in the CIRC (Congreso Internacional de Robótica y Computación ) 2022'},
   { year: 2021, text: 'Solutions for TMR (Torneo Mexicano de Robotica) 2021 tests'},
   { year: 2021, text: 'Mechatronic engineering graduation'},
-  { year: 2020, text: 'Working at Intevolution'}
+  { year: 2020, text: 'Hiring on Intevolution'}
 ];

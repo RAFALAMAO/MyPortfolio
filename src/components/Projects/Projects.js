@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, FlyShip } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle, SectionTitle2 } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import {GoLinkExternal} from 'react-icons/go';
+import {FaSpaceShuttle} from 'react-icons/fa';
 
 import { useInView } from 'react-intersection-observer';
 import { animateTitle } from '../../utils/animateTitle';
@@ -46,6 +47,16 @@ function Projects(){
   // Hoock used for get in view element information
   const [ ref, inView, entry ] = useInView({threshold: .05});
 
+  const [randomColors, setrandomColors] = useState('')
+
+  useEffect(() => {
+    let randColors = []
+    projects.forEach(element => {
+      randColors.push(`${Math.random()*200}, ${Math.random()*255}, ${Math.random()*255}`)
+    });
+    setrandomColors(randColors)
+  }, [])
+
   return(
     <Section nopadding id="projects">
       <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inView, entry)} $divider/>
@@ -55,34 +66,44 @@ function Projects(){
           // initial={{x: '-200px'}}
           // animate={animation}
         >
-          {projects.map((p, i) => {
-            return (
-              <BlogCard key={i}>
-              <Img src={p.image} />
-                <TitleContent>
-                  <HeaderThree $title>{p.title}</HeaderThree>
-                  <Hr />
-                </TitleContent>
-                <CardInfo className="card-info">{p.description}</CardInfo>
-                <div>
-                  {/* <TitleContent>Technologie</TitleContent> */}
-                  <TagList>
-                    {p.tags.map((t, i) => {
-                      return <Tag key={i}>{t}</Tag>;
-                    })}
-                  </TagList>
-                </div>
-                <UtilityList>
-                  {
-                    p.visit !== null ?  <ExternalLinks href={p.visit} target="_blank">Visit <GoLinkExternal size="1.3rem"/></ExternalLinks> : null
-                  }
-                  {
-                    p.source !== null ?  <ExternalLinks href={p.source} target="_blank">Code</ExternalLinks> : null
-                  }
-                </UtilityList>
-              </BlogCard>
-            );
-          })}
+          {
+            projects.map((p, i) => {
+              return (
+                <BlogCard key={i} $color = {randomColors[i]}>
+                <Img src={p.image} />
+                  <TitleContent>
+                    <HeaderThree $title>{p.title}</HeaderThree>
+                    <FlyShip>
+                      <FaSpaceShuttle style={{
+                        width:'100px',
+                        marginTop:'15px',
+                        marginBottom:'10px',
+                        marginRight:'500px',
+                        color:`rgb(${randomColors[i]})`,
+                      }}/>
+                    </FlyShip>
+                  </TitleContent>
+                  <CardInfo className="card-info">{p.description}</CardInfo>
+                  <div>
+                    {/* <TitleContent>Technologie</TitleContent> */}
+                    <TagList>
+                      {p.tags.map((t, i) => {
+                        return <Tag key={i}>{t}</Tag>;
+                      })}
+                    </TagList>
+                  </div>
+                  <UtilityList>
+                    {
+                      p.visit !== null ?  <ExternalLinks href={p.visit} target="_blank">Visit <GoLinkExternal size="1.3rem"/></ExternalLinks> : null
+                    }
+                    {
+                      p.source !== null ?  <ExternalLinks href={p.source} target="_blank">Code</ExternalLinks> : null
+                    }
+                  </UtilityList>
+                </BlogCard>
+              );
+            })
+          }
         </GridContainer>
       </div>
     </Section>
