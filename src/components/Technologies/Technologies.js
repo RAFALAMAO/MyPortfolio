@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiJavascript1, DiReact, DiVisualstudio } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionTextSkills, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 import { useInView } from 'react-intersection-observer';
@@ -17,15 +17,17 @@ function Technologies () {
       <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inView, entry)}>Skills</SectionTitle>
 
       <div ref={ref}>
-        <SectionText $skills><br/>
+        <SectionTextSkills><br/>
           <strong>Front-End:</strong> HTML, CSS, JavaScript, React.js, React Hooks, React Router, Next.js, Framer Motion, Styled Components<br/><br/>
           <strong>Back-End:</strong> JavaScript, Node JS, Python, C++, C, MySQL<br/><br/>
           <strong>Mechatronic:</strong> ROS, Matlab, SolidWorks, LabView<br/><br/>
           <strong>OS:</strong> Linux, Windows<br/><br/>
           <strong>Cloud:</strong> Azure, AWS<br/><br/>
-          <strong>Other:</strong> AI (TensorFlow), Computer Vision (OpenCV)<br/><br/>
-          <strong>IDE:</strong> Visual Studio Code
-        </SectionText>
+          <strong>Data science (Python):</strong> AI (TF), OpenCV, Pandas, NumPy, Matplotlib, scikit-learn<br/><br/>
+          <strong>IDE:</strong> Visual Studio Code, Google Colab, Jupyter notebook<br/><br/>
+          <strong>Git-repo:</strong> GitHub, Bitbucket<br/><br/>
+          <strong>Workflow:</strong> Scrum
+        </SectionTextSkills>
       </div>
 
       <List>

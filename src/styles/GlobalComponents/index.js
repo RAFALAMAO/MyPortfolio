@@ -127,6 +127,39 @@ export const SectionText = styled.p`
   }
 `
 
+export const SectionTextSkills = styled.p`
+  max-width: 800px;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 300;
+  padding-bottom: 3.6rem;
+  /* color: #00abab; */
+  color: rgba(240, 240, 255, 0.63);
+  /* text-align: justify;
+  text-justify: inter-word; */
+
+  & strong {
+    color: rgba(160, 160, 235, 0.7);
+    background: linear-gradient(0deg, rgba(0, 50, 50, 0.9) 8.77%, rgba(0, 150, 255, 1) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 670px;
+    padding-right: ${(props) => props.hero ? '90px' : ''};
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    padding-right: ${(props) => props.hero ? '0px' : ''};
+    line-height: 24px;
+    padding-bottom: 16px;
+  }
+`
+
 export const SectionDivider = styled(motion.div)`
 
   width: 64px;
