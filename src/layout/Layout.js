@@ -11,7 +11,7 @@ export const Layout = ({children}) => {
     <Container>
       <motion.div
           initial={{ y: -30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, opacity: 1, z:1 }}
           transition={{ duration: 0.6 }}
         >
         <Header/>

@@ -31,7 +31,10 @@ const ScrollButton = () => {
     <Button>
       <HiOutlineArrowCircleUp
         onClick={scrollToTop}
-        style={{ display: visible ? 'inline' : 'none' }}
+        style={{
+          display: visible ? 'inline' : 'none',
+          zIndex: 1
+        }}
       />
     </Button>
   );

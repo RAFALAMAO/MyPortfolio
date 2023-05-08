@@ -47,6 +47,7 @@ export const SocialIconsContainer = styled.div`
 max-width: 1040px;
 display: flex;
 justify-content: space-between;
+z-index: 1;
 
 @media ${props => props.theme.breakpoints.md}{
   display: flex;
@@ -65,7 +66,7 @@ export const CompanyContainer = styled.div`
 	align-items:baseline;
 	flex-wrap: wrap;
 	margin-right: auto;
-	
+	z-index: 1;
 
 	@media ${props => props.theme.breakpoints.md}{
 		flex-direction: column;
@@ -89,6 +90,7 @@ export const Slogan = styled.p`
 	line-height: 30px;
 	padding: 1rem;
 	text-align: center;
+	z-index: 1;
 
 	@media ${props => props.theme.breakpoints.md}{
 		font-size: 16px;
@@ -105,6 +107,7 @@ export const Slogan = styled.p`
 export const SocialContainer = styled.div`
 	display: flex;
   align-items: center;
+	z-index: 1;
 
 	@media ${props => props.theme.breakpoints.md}{
 		justify-content: center;
@@ -151,6 +154,7 @@ export const LinkTitle = styled.h4`
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.4);
 	margin-bottom: 16px;
+	z-index: 1;
 
 	@media ${props => props.theme.breakpoints.sm} {
 		font-size: 10px;
