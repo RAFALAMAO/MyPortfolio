@@ -28,7 +28,7 @@ const cloudProps = {
     },
   },
   options: {
-    reverse: true,
+    reverse: false,
     // depth: 1,
     wheelZoom: false,
     imageScale: 1.5,
