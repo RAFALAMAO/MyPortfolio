@@ -10,30 +10,6 @@ const Div = styled.div`
   }
 `;
 
-const iconNames = [
-  'siReact',
-  'siJavascript',
-  'siTypescript',
-  'siVuedotjs',
-  'siCss3',
-  'siPython',
-  'siRos',
-  'siOpencv',
-  'siTensorflow',
-  'siTmux',
-  'siMysql',
-  'siDocker',
-  'siPostgresql',
-  'siStyledcomponents',
-  'siNestjs',
-  'siAmazonaws',
-  'siAzuredevops',
-  'siVisualstudiocode',
-  'siLabview',
-  'siHtml5',
-  'siLinux',
-]
-
 const cloudProps = {
   id: 'stable-id-for-csr-ssr',
   containerProps: {
@@ -41,7 +17,7 @@ const cloudProps = {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      marginLeft: 40,
+      // marginLeft: 0,
       // marginRight: 20 * 2,
     },
   },
@@ -64,6 +40,34 @@ const cloudProps = {
   },
 }
 
+const iconNames = [
+  'siReact',
+  'siJavascript',
+  'siTypescript',
+  'siVuedotjs',
+  'siCss3',
+  'siPython',
+  'siRos',
+  'siOpencv',
+  'siTensorflow',
+  'siTmux',
+  'siMysql',
+  'siDocker',
+  'siPostgresql',
+  'siStyledcomponents',
+  'siNestjs',
+  'siAmazonaws',
+  'siAzuredevops',
+  'siVisualstudiocode',
+  'siLabview',
+  'siHtml5',
+  'siLinux',
+  'siNodedotjs',
+  'siNumpy',
+  'siGithub',
+  'siBitbucket',
+]
+
 const icons = iconNames.map((icon) => {
   return renderSimpleIcon({
     icon: Allicons[icon],
@@ -77,7 +81,6 @@ const icons = iconNames.map((icon) => {
 const BackgroundAnimationCloud = () => (
   <Div>
     <Cloud {...cloudProps}>
-      <h1>hi</h1>
       {icons}
     </Cloud>
   </Div>
