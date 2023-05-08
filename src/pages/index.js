@@ -1,5 +1,5 @@
 import Acomplishments from '../components/Acomplishments/Acomplishments';
-import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
+import BgAnimationCloud from '../components/BackgrooundAnimation/BackgroundAnimationCloud';
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
@@ -19,8 +19,12 @@ const Home = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
         >
           <Section grid hero>
-            <Hero/>
-            <BgAnimation/>
+            <Hero
+              handleClick={
+                () => { window.open("./documents/Aarón_Juárez_CV.pdf","_blank"); }
+              }
+            />
+            <BgAnimationCloud/>
           </Section>
         </motion.div>
 
