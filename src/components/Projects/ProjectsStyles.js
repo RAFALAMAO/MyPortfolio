@@ -18,7 +18,7 @@ export const GridContainer = styled(motion.section)`
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 3rem;
   place-items: center;
-  column-gap: 2rem;
+  column-gap: 3rem;
   row-gap: 3rem;
   /* @media ${() => props.theme.breakpoints.sm} {
   display: flex;
@@ -38,8 +38,8 @@ export const GridContainer = styled(motion.section)`
 `;
 export const BlogCard = styled.div`
   border-radius: 20px;
-  box-shadow: 1px 3px 20px rgba(0, 191, 250, 0.2);
-  background: rgba(5, 5, 6, 0.0);
+  box-shadow: 6px 6px 12px rgba(0, 191, 250, 0.2);
+  background: rgba(15, 15, 15, 0.0);
   border-bottom: solid 1px rgba(5, 50, 50);
 
   text-align: center;

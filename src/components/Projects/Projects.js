@@ -4,7 +4,7 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle, SectionTitle2 } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import {GoLinkExternal} from 'react-icons/go';
-import {FaSpaceShuttle} from 'react-icons/fa';
+import {HiOutlineMinus} from 'react-icons/hi';
 
 import { useInView } from 'react-intersection-observer';
 import { animateTitle } from '../../utils/animateTitle';
@@ -49,10 +49,19 @@ function Projects(){
 
   const [randomColors, setrandomColors] = useState('')
 
+  // useEffect(() => {
+  //   let randColors = []
+  //   projects.forEach(element => {
+  //     randColors.push(`${Math.random()*200}, ${Math.random()*255}, ${Math.random()*255}`)
+  //   });
+  //   setrandomColors(randColors)
+  // }, [])
+
   useEffect(() => {
     let randColors = []
     projects.forEach(element => {
-      randColors.push(`${Math.random()*200}, ${Math.random()*255}, ${Math.random()*255}`)
+      // randColors.push(`${Math.random()*10}, ${Math.random()*0}, ${Math.random()*0}`)
+      randColors.push(`10, 10, 255`)
     });
     setrandomColors(randColors)
   }, [])
@@ -70,16 +79,17 @@ function Projects(){
             projects.map((p, i) => {
               return (
                 <BlogCard key={i} $color = {randomColors[i]}>
-                <Img src={p.image} />
+                  <Img src={p.image} />
                   <TitleContent>
                     <HeaderThree $title>{p.title}</HeaderThree>
                     <FlyShip>
-                      <FaSpaceShuttle style={{
+                      <HiOutlineMinus style={{
                         width:'100px',
-                        marginTop:'15px',
-                        marginBottom:'10px',
+                        marginTop:'5px',
+                        // marginBottom:'10px',
                         marginRight:'500px',
                         color:`rgb(${randomColors[i]})`,
+                        fontSize: '40px'
                       }}/>
                     </FlyShip>
                   </TitleContent>

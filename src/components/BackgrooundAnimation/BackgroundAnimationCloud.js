@@ -4,9 +4,10 @@ import {Cloud, renderSimpleIcon} from 'react-icon-cloud'
 import * as Allicons from 'simple-icons';
 
 const Div = styled.div`
+  margin: auto 0px;
   @media ${(props) => (props.theme.breakpoints.sm) } {
-    margin-left: -40%;
-    width: 40%;
+    /* margin-left: -40%; */
+    margin: 0px auto;
   }
 `;
 
