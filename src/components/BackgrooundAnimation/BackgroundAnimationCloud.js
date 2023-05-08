@@ -34,6 +34,36 @@ const iconNames = [
   'siLinux',
 ]
 
+const cloudProps = {
+  id: 'stable-id-for-csr-ssr',
+  containerProps: {
+    style: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginLeft: 40,
+      // marginRight: 20 * 2,
+    },
+  },
+  canvasProps: {
+    style: {
+      maxWidth: '100%',
+    },
+  },
+  options: {
+    reverse: true,
+    // depth: 1,
+    wheelZoom: false,
+    imageScale: 1.5,
+    activeCursor: 'default',
+    tooltip: 'native',
+    initial: [0.015, -0.015],
+    clickToFront: 500,
+    tooltipDelay: 0,
+    outlineColour: '#0000',
+  },
+}
+
 const icons = iconNames.map((icon) => {
   return renderSimpleIcon({
     icon: Allicons[icon],
@@ -46,7 +76,8 @@ const icons = iconNames.map((icon) => {
 
 const BackgroundAnimationCloud = () => (
   <Div>
-    <Cloud>
+    <Cloud {...cloudProps}>
+      <h1>hi</h1>
       {icons}
     </Cloud>
   </Div>
