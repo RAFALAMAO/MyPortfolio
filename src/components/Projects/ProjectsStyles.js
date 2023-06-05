@@ -39,8 +39,9 @@ export const GridContainer = styled(motion.section)`
 export const BlogCard = styled.div`
   /* border-radius: 20px; */
   /* box-shadow: 6px 6px 12px rgba(0, 191, 250, 0.2); */
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0px);
+  opacity: 0.83;
 
   text-align: center;
   width: 400px;
@@ -54,8 +55,11 @@ export const BlogCard = styled.div`
   @media screen and (min-width: 768px) {
     transition: all 0.3s ease-in-out;
     &:hover {
+      opacity: 1;
       transform: scale(1.04);
       /* border-radius: 20px; */
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(3px);
       box-shadow: ${(props) => `0px 0px 8px 6px rgba(60, 0, 225, .5)`};
       /* border-bottom: ${(props) => `solid 1px rgb(${props.$color})`} */
     }
@@ -64,7 +68,10 @@ export const BlogCard = styled.div`
   @media ${(props) => props.theme.breakpoints.md} {
     transition: all 0.2s ease-in-out;
     &:hover {
+      opacity: 1;
       transform: scale(1.015);
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(0px);
       /* border-radius: 20px; */
       box-shadow: ${(props) => `0px 0px 8px 6px rgba(60, 0, 225, .5)`};
       /* border-bottom: ${(props) => `solid 1px rgb(${props.$color})`} */
