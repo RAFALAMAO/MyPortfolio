@@ -5,7 +5,7 @@ const starsCtx = stars.getContext('2d');
 // global variables
 let screen, starsElements, starsParams = {
     speed: 0.2,
-    number: 300,
+    number: 330,
     extinction: 4,
     maxOpacity: 0.3
 };
@@ -58,6 +58,13 @@ function setupStars() {
     window.cancelAnimationFrame(updateStars);
     stars.width = screen.w;
     stars.height = screen.h;
+    if( screen.w <= 400 ){
+        starsParams.speed = 0.15
+        starsParams.number = 100
+    } else {
+        starsParams.speed = 0.4
+        starsParams.number = 330
+    }
     starsElements = [];
     for (let i = 0; i < starsParams.number; i++) {
         starsElements[i] = new Star();
@@ -66,19 +73,12 @@ function setupStars() {
 
 // redraw the frame
 function updateStars() {
-    starsCtx.fillStyle = "#070619";
+    starsCtx.fillStyle = "#07061c";
     starsCtx.fillRect(0, 0, stars.width, stars.height);
     starsElements.forEach(function (s) {
         s.show();
         s.move();
     });
 
-    if( screen.w <= 400 ){
-        starsParams.speed = 0.06
-        starsParams.number = 150
-    } else {
-        starsParams.speed = 0.2
-        starsParams.number = 300
-    }
     window.requestAnimationFrame(updateStars);
 }

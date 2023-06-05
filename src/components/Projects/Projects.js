@@ -61,7 +61,7 @@ function Projects(){
     let randColors = []
     projects.forEach(element => {
       // randColors.push(`${Math.random()*10}, ${Math.random()*0}, ${Math.random()*0}`)
-      randColors.push(`10, 10, 255`)
+      randColors.push(`92, 10, 255`)
     });
     setrandomColors(randColors)
   }, [])
@@ -81,7 +81,7 @@ function Projects(){
                 <BlogCard key={i} $color = {randomColors[i]}>
                   <Img src={p.image} />
                   <TitleContent>
-                    <HeaderThree $title>{p.title}</HeaderThree>
+                  <HeaderThree $title>{p.title}</HeaderThree>
                     <FlyShip>
                       <HiOutlineMinus style={{
                         width:'100px',

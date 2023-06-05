@@ -47,15 +47,18 @@ export default class MyDocument extends Document {
             // backgroundSize: 'contain, contain',
           }}>
           <div>
-            <canvas id='canvas-stars' style={{
-              position: 'fixed',
-              top: '0',
-              left: '0',
-              width: '100%',
-              height: '100%',
-            }}></canvas>
+            <canvas
+              id='canvas-stars'
+              style={{
+                position: 'fixed',
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100%',
+              }}
+            />
           </div>
-          <script src="/static/swirl.js"></script>
+          <script src="/static/starsAnimation.js"></script>
           <Main />
           <NextScript />
         </body>

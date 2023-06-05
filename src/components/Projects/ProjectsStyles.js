@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export const Img = styled.img`
   width: 100%;
   height: 100%;
-  border-radius: 20px 20px 0px 0px;
+  /* border-radius: 20px 20px 0px 0px; */
   object-fit: cover;
   overflow: hidden;
 
@@ -17,7 +17,7 @@ export const GridContainer = styled(motion.section)`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 3rem;
-  place-items: center;
+  place-items: start;
   column-gap: 3rem;
   row-gap: 3rem;
   /* @media ${() => props.theme.breakpoints.sm} {
@@ -37,10 +37,10 @@ export const GridContainer = styled(motion.section)`
   }
 `;
 export const BlogCard = styled.div`
-  border-radius: 20px;
-  box-shadow: 6px 6px 12px rgba(0, 191, 250, 0.2);
-  background: rgba(15, 15, 15, 0.0);
-  border-bottom: solid 1px rgba(5, 50, 50);
+  /* border-radius: 20px; */
+  /* box-shadow: 6px 6px 12px rgba(0, 191, 250, 0.2); */
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
 
   text-align: center;
   width: 400px;
@@ -55,10 +55,9 @@ export const BlogCard = styled.div`
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.04);
-      border-radius: 20px 20px 50px 0px;
-      box-shadow: ${(props) => `1px 3px 20px rgba(${props.$color}, .5)`};
-      background: rgba(0, 0, 0, .3);
-      border-bottom: ${(props) => `solid 1px rgb(${props.$color})`}
+      /* border-radius: 20px; */
+      box-shadow: ${(props) => `0px 0px 8px 6px rgba(60, 0, 225, .5)`};
+      /* border-bottom: ${(props) => `solid 1px rgb(${props.$color})`} */
     }
   }
 
@@ -66,10 +65,9 @@ export const BlogCard = styled.div`
     transition: all 0.2s ease-in-out;
     &:hover {
       transform: scale(1.015);
-      border-radius: 20px 20px 50px 0px;
-      box-shadow: ${(props) => `1px 3px 20px rgba(${props.$color}, .5)`};
-      background: rgba(0, 0, 0, .8);
-      border-bottom: ${(props) => `solid 1px rgb(${props.$color})`}
+      /* border-radius: 20px; */
+      box-shadow: ${(props) => `0px 0px 8px 6px rgba(60, 0, 225, .5)`};
+      /* border-bottom: ${(props) => `solid 1px rgb(${props.$color})`} */
     }
   }
 
@@ -79,11 +77,11 @@ export const BlogCard = styled.div`
 `;
 
 export const FlyShip = styled('div')`
-  opacity:0.2;
+  opacity: 0.2;
   color: white;
   /* @media screen and (min-width: 768px) { */
   @media screen and (min-width: 768px) {
-    transition: all 1.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     ${BlogCard}:hover &{
       transform: translateX(210px);
       color: ${(props) => `rgb(${props.$colorShip})`};
@@ -92,7 +90,7 @@ export const FlyShip = styled('div')`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     ${BlogCard}:hover &{
       transform: translateX(210px);
       color: ${(props) => `rgb(${props.$colorShip})`};
@@ -113,8 +111,8 @@ export const TitleContent = styled.div`
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
-  letter-spacing: 2px;
-  color: #9cc9e3;
+  letter-spacing: 1px;
+  color: #9cb4e3;
   padding: 0.5rem 0;
   font-size: ${(props) => (props.$title ? '3rem' : '2rem')};
 `;
@@ -145,7 +143,7 @@ export const CardInfo = styled.p`
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
-  text-align: justify;
+  text-align: end;
   /* @media ${() => props.theme.breakpoints.sm} {
     padding:.3rem */
 
