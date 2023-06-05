@@ -71,7 +71,7 @@ export const BlogCard = styled.div`
       opacity: 1;
       transform: scale(1.015);
       background: rgba(0, 0, 0, 0);
-      backdrop-filter: blur(0px);
+      backdrop-filter: blur(3px);
       /* border-radius: 20px; */
       box-shadow: ${(props) => `0px 0px 8px 6px rgba(60, 0, 225, .5)`};
       /* border-bottom: ${(props) => `solid 1px rgb(${props.$color})`} */
