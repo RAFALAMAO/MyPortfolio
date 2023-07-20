@@ -44,11 +44,6 @@ export const List = styled.ul`
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    // display: flex;
-    // flex-direction: column;
-    // grid-template-columns: repeat(auto, 10fr);
-    // margin: 2px 0;
-    // display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     max-width: 500px;
@@ -108,7 +103,10 @@ export const ListItem = styled.li`
   max-width: 320px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(55, 55, 255, 0.05);
+  border: 1px solid rgba(52, 164, 235, .75);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
   padding: 10px;
 

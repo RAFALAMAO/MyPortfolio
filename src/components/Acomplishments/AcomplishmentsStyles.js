@@ -23,13 +23,12 @@ export const Boxes = styled.div`
 `
 
 export const Box = styled.div`
-  background: #121438;
-  border-radius: 12px;
+  border: 1px solid rgba(173, 216, 230, 0);
   height: 144px;
   padding: 24px;
+
   @media ${props => props.theme.breakpoints.lg} {
     height: 210px;
-
   }
 
   @media ${props => props.theme.breakpoints.md} {
@@ -40,10 +39,6 @@ export const Box = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     height: 110px;
     padding: 12px;
-
-    // &:nth-child(2n){
-    //   grid-row:1;
-    // }
   }
 `
 export const BoxNum = styled.h5`

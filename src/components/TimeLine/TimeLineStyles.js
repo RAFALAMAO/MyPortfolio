@@ -7,7 +7,8 @@ export const CarouselContainer = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
-  /* overflow-x: hidden; */
+  gap: 12px;
+  overflow-x: hidden;
 
   margin-left: 32px;
   &:first-of-type {
@@ -29,6 +30,7 @@ export const CarouselContainer = styled.ul`
     touch-action: pan-x;
     justify-content: initial;
     margin-bottom: 8px;
+    gap: 0px;
   }
 `;
 
@@ -40,7 +42,9 @@ export const CarouselMobileScrollNode = styled.div`
 `;
 
 export const CarouselItem = styled.div`
-  background: #02041e;
+  border: 1px solid rgba(173, 216, 230, .2);
+  background: rgba(173, 216, 230, 0.04);
+  padding: 10px;
   border-radius: 3px;
   max-width: 196px;
 
@@ -51,7 +55,6 @@ export const CarouselItem = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 32px;
     min-width: 120px;
-    background: #02041e;
     padding: 4px;
     align-content: start;
     scroll-snap-align: start;
@@ -72,7 +75,8 @@ export const CarouselItemTitle = styled.h4`
   letter-spacing: 0.02em;
   display: flex;
   /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
-  background: rgba(130, 200, 255, 1);
+  background: rgb(27,24,84);
+  background: linear-gradient(349deg, rgba(27,24,84,1) 0%, rgba(9,9,121,1) 33%, rgba(98,255,252,1) 100%); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;

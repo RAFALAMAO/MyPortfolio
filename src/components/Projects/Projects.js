@@ -10,61 +10,7 @@ import { useInView } from 'react-intersection-observer';
 import { animateTitle } from '../../utils/animateTitle';
 
 function Projects(){
-
-  // const animation = useAnimation();
-  // const [handleShow, setHandleShow] = React.useState(false);
-
-  // if (handleShow) {
-  //   animation.start({
-  //     x: 0,
-  //     opacity: 1,
-  //     transition: {
-  //       duration: 0.8
-  //     }
-  //   })
-  // } else {
-  //   animation.start({
-  //     x: '-200px',
-  //     opacity: 0,
-  //     transition: {
-  //       duration: 0.8,
-  //     }
-  //   })
-  // }
-
-  // React.useEffect(() => {
-  //   const listener = () => {
-  //     if (window.scrollY > 150) {
-  //       setHandleShow(true);
-  //     } else setHandleShow(false);
-  //   };
-  //   window.addEventListener("scroll", listener);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", listener);
-  //   };
-  // }, []);
-  // Hoock used for get in view element information
   const [ ref, inView, entry ] = useInView({threshold: .05});
-
-  const [randomColors, setrandomColors] = useState('')
-
-  // useEffect(() => {
-  //   let randColors = []
-  //   projects.forEach(element => {
-  //     randColors.push(`${Math.random()*200}, ${Math.random()*255}, ${Math.random()*255}`)
-  //   });
-  //   setrandomColors(randColors)
-  // }, [])
-
-  useEffect(() => {
-    let randColors = []
-    projects.forEach(element => {
-      // randColors.push(`${Math.random()*10}, ${Math.random()*0}, ${Math.random()*0}`)
-      randColors.push(`92, 10, 255`)
-    });
-    setrandomColors(randColors)
-  }, [])
 
   return(
     <Section nopadding id="projects">
@@ -72,30 +18,26 @@ function Projects(){
       <SectionTitle2 initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inView, entry)} $main>Projects</SectionTitle2>
       <div ref={ref}>
         <GridContainer
-          // initial={{x: '-200px'}}
-          // animate={animation}
         >
           {
             projects.map((p, i) => {
               return (
-                <BlogCard key={i} $color = {randomColors[i]}>
+                <BlogCard key={i}>
                   <Img src={p.image} />
                   <TitleContent>
-                  <HeaderThree $title>{p.title}</HeaderThree>
+                    <HeaderThree $title>{p.title}</HeaderThree>
                     <FlyShip>
                       <HiOutlineMinus style={{
                         width:'100px',
                         marginTop:'5px',
-                        // marginBottom:'10px',
                         marginRight:'500px',
-                        color:`rgb(${randomColors[i]})`,
+                        color: 'rgba(52, 164, 235, .75)',
                         fontSize: '40px'
                       }}/>
                     </FlyShip>
                   </TitleContent>
                   <CardInfo className="card-info">{p.description}</CardInfo>
                   <div>
-                    {/* <TitleContent>Technologie</TitleContent> */}
                     <TagList>
                       {p.tags.map((t, i) => {
                         return <Tag key={i}>{t}</Tag>;

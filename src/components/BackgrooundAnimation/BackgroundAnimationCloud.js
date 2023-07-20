@@ -6,9 +6,9 @@ import * as Allicons from 'simple-icons';
 const Div = styled.div`
   margin: auto 0px;
   @media ${(props) => (props.theme.breakpoints.sm) } {
-    /* margin-left: -40%; */
     margin: 0px auto;
   }
+  z-index: 1;
 `;
 
 const iconNames = [
@@ -59,8 +59,6 @@ const BackgroundAnimationCloud = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // marginLeft: 0,
-        // marginRight: 20 * 2,
       },
     },
     canvasProps: {
@@ -70,15 +68,19 @@ const BackgroundAnimationCloud = () => {
     },
     options: {
       reverse: false,
-      // depth: 1,
+      activeCursor: 'default',
+      dragControl: true,
+      dragThreshold: 0.01,
+      shape: 'hring',
+      outlineColour: '#3a82e0',
+      outlineMethod: 'colour',
+      shadow: "#fff",
       wheelZoom: false,
       imageScale: 1.5,
-      activeCursor: 'default',
       tooltip: 'native',
       initial: velocity,
       clickToFront: 500,
       tooltipDelay: 0,
-      outlineColour: '#0000',
     },
   }
 

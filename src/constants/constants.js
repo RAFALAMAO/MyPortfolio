@@ -84,7 +84,7 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2022, text: 'Article published in Pädi Boletín Científico de Ciencias Básicas e Ingenierías del ICBI 2022'},
-  { year: 2022, text: 'Hiring on The Rocket Code as a full stack developer'},
+  { year: 2022, text: 'Hiring on The Rocket Code as full stack developer'},
   { year: 2022, text: 'Participation in the CIRC (Congreso Internacional de Robótica y Computación ) 2022'},
   { year: 2021, text: 'Solutions for TMR (Torneo Mexicano de Robotica) 2021 tests'},
   { year: 2021, text: 'Mechatronic engineering graduation'},

@@ -18,9 +18,10 @@ function Technologies () {
 
       <div ref={ref}>
         <SectionTextSkills><br/>
-          <strong>Front-End:</strong> HTML, CSS, JavaScript, React.js, React Hooks, React Router, Next.js, Framer Motion, Styled Components<br/><br/>
-          <strong>Back-End:</strong> JavaScript, Node JS, Python, C++, C, MySQL<br/><br/>
-          <strong>Mechatronic:</strong> ROS, Matlab, SolidWorks, LabView<br/><br/>
+          <strong>Front-End:</strong> HTML, CSS, JavaScript, Typescript, React, Vue.js, Next.js, Framer Motion, Styled Components<br/><br/>
+          <strong>Back-End:</strong> JavaScript, Typescript, Node JS, Express, NestJS<br/><br/>
+          <strong>DB:</strong> MySQL, PostgreSQL, MongoDB, Sequelize, TypeORM<br/><br/>
+          <strong>Mechatronic:</strong> ROS, MATLAB, SolidWorks, LabView, Python, C++, C<br/><br/>
           <strong>OS:</strong> Linux, Windows<br/><br/>
           <strong>Cloud:</strong> Azure, AWS<br/><br/>
           <strong>Data science (Python):</strong> AI (TF), OpenCV, Pandas, NumPy, Matplotlib, scikit-learn<br/><br/>

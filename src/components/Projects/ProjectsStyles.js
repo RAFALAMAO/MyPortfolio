@@ -4,13 +4,9 @@ import { motion } from 'framer-motion';
 export const Img = styled.img`
   width: 100%;
   height: 100%;
-  /* border-radius: 20px 20px 0px 0px; */
+  border-radius: 10px;
   object-fit: cover;
   overflow: hidden;
-
-  // @media ${(props) => props.theme.breakpoints.sm} {
-  //   width: 80%;
-  // }
 `;
 
 export const GridContainer = styled(motion.section)`
@@ -20,48 +16,32 @@ export const GridContainer = styled(motion.section)`
   place-items: start;
   column-gap: 3rem;
   row-gap: 3rem;
-  /* @media ${() => props.theme.breakpoints.sm} {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  padding-bottom: 0; */
-  /* @media screen and (min-width: 576px) { */
-  /* display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    padding-bottom: 0; */
-  /* } */
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: .5rem;
   }
 `;
 export const BlogCard = styled.div`
-  /* border-radius: 20px; */
-  /* box-shadow: 6px 6px 12px rgba(0, 191, 250, 0.2); */
-  background: rgba(0, 0, 0, 0.4);
+  background: #07061c;
   backdrop-filter: blur(0px);
-  opacity: 0.83;
-
   text-align: center;
   width: 400px;
-  /* @media ${() => props.theme.breakpoints.sm} {
-    width: 100%; */
-  /* } */
+  border-radius: 10px;
+  border: 1px solid black;
+
   @media screen and (min-width: 576px) {
     width: 100%;
   }
-  /* @media screen and (min-width: 768px) { */
+
   @media screen and (min-width: 768px) {
     transition: all 0.3s ease-in-out;
     &:hover {
       opacity: 1;
       transform: scale(1.04);
-      /* border-radius: 20px; */
-      background: rgba(0, 0, 0, 0);
+      border: 1px solid rgba(52, 164, 235, .75);
+      background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(3px);
-      box-shadow: ${(props) => `0px 0px 8px 6px rgba(60, 0, 225, .5)`};
-      /* border-bottom: ${(props) => `solid 1px rgb(${props.$color})`} */
+      -webkit-backdrop-filter: blur(3px);
     }
   }
 
@@ -70,11 +50,10 @@ export const BlogCard = styled.div`
     &:hover {
       opacity: 1;
       transform: scale(1.015);
-      background: rgba(0, 0, 0, 0);
+      border: 1px solid rgba(52, 164, 235, .75);
+      background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(3px);
-      /* border-radius: 20px; */
-      box-shadow: ${(props) => `0px 0px 8px 6px rgba(60, 0, 225, .5)`};
-      /* border-bottom: ${(props) => `solid 1px rgb(${props.$color})`} */
+      -webkit-backdrop-filter: blur(3px);
     }
   }
 
@@ -86,7 +65,7 @@ export const BlogCard = styled.div`
 export const FlyShip = styled('div')`
   opacity: 0.2;
   color: white;
-  /* @media screen and (min-width: 768px) { */
+
   @media screen and (min-width: 768px) {
     transition: all 0.2s ease-in-out;
     ${BlogCard}:hover &{
@@ -147,14 +126,11 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
-  color: #e4e6e7;
+  color: rgba(255,255,255,0.75);
   font-style: 2rem;
   line-height: 24px;
   text-align: end;
-  /* @media ${() => props.theme.breakpoints.sm} {
-    padding:.3rem */
 
-  /* } */
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0 20px;
   }
