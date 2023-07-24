@@ -64,7 +64,7 @@ function Technologies () {
             <ListTitle>IDE</ListTitle>
             <ListParagraph>
               Most used:<br />
-              Visual Studio Code
+              VS Code
             </ListParagraph>
           </ListContainer>
         </ListItem>

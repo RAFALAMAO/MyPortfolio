@@ -23,9 +23,13 @@ export const Boxes = styled.div`
 `
 
 export const Box = styled.div`
-  border: 1px solid rgba(173, 216, 230, 0);
-  height: 144px;
+  border: 1px solid rgba(52,164,235,.75);
+  background: rgba(255, 255, 255, 0.04);
   padding: 24px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 
   @media ${props => props.theme.breakpoints.lg} {
     height: 210px;
@@ -41,14 +45,19 @@ export const Box = styled.div`
     padding: 12px;
   }
 `
+
 export const BoxNum = styled.h5`
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.01em;
-  color: #FFFFFF;
-  margin-bottom: 8px;
+  background: rgb(27,24,84);
+  background: linear-gradient(349deg, rgba(27,24,84,1) 0%, rgba(9,9,121,1) 33%, rgba(98,255,252,1) 100%); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
 
   @media ${props => props.theme.breakpoints.md} {
     font-size: 28px;

@@ -6,7 +6,8 @@ export const CarouselContainer = styled.ul`
   padding: 0rem;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 12px;
   overflow-x: hidden;
 
@@ -29,6 +30,7 @@ export const CarouselContainer = styled.ul`
     scroll-snap-type: x mandatory;
     touch-action: pan-x;
     justify-content: initial;
+    flex-wrap: nowrap;
     margin-bottom: 8px;
     gap: 0px;
   }
@@ -43,7 +45,7 @@ export const CarouselMobileScrollNode = styled.div`
 
 export const CarouselItem = styled.div`
   border: 1px solid rgba(173, 216, 230, .2);
-  background: rgba(173, 216, 230, 0.04);
+  background: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border-radius: 3px;
   max-width: 196px;
@@ -75,10 +77,7 @@ export const CarouselItemTitle = styled.h4`
   letter-spacing: 0.02em;
   display: flex;
   /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
-  background: rgb(27,24,84);
-  background: linear-gradient(349deg, rgba(27,24,84,1) 0%, rgba(9,9,121,1) 33%, rgba(98,255,252,1) 100%); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(120, 105, 232,.6);
   margin-bottom: 8px;
 
   @media ${(props) => props.theme.breakpoints.md} {

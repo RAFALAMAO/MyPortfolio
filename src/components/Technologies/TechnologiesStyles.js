@@ -108,7 +108,7 @@ export const ListItem = styled.li`
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px 25px;
 
 @media ${props => props.theme.breakpoints.md}{
   max-width: 203px;
