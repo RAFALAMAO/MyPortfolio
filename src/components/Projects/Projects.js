@@ -49,6 +49,7 @@ function Projects(){
                     placeholder="blur"
                     blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(620, 320))}`}
                     alt="Picture"
+                    priority
                   />
                   <TitleContent>
                     <HeaderThree $title>{p.title}</HeaderThree>
