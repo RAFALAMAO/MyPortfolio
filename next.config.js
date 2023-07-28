@@ -6,7 +6,16 @@ const nextConfig = {
     staticFolder: '/public'
   },
   images: {
-    unoptimized: true,
+    ormats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'my-portfolio-rafalamao.vercel.app',
+        port: '',
+        pathname: '/images/projects/**',
+      },
+    ],
+    // unoptimized: true
   },
   compiler: {
     styledComponents: true

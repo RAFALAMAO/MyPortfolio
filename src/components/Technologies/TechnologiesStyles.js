@@ -44,7 +44,8 @@ export const List = styled.ul`
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    justify-items: center;
     gap: 10px;
     max-width: 500px;
     margin: 24px auto;
@@ -110,16 +111,16 @@ export const ListItem = styled.li`
   border-radius: 10px;
   padding: 10px 17px;
 
-@media ${props => props.theme.breakpoints.md}{
-  max-width: 203px;
-}
+  @media ${props => props.theme.breakpoints.md}{
+    max-width: 203px;
+  }
 
-@media ${props => props.theme.breakpoints.sm}{
-  margin-bottom: 14px;
-  max-width: 320px;
-  flex-direction: row;
-  padding: 5px 7px;
-}
+  @media ${props => props.theme.breakpoints.sm}{
+    margin-bottom: 14px;
+    width: 150%;
+    flex-direction: row;
+    padding: 5px 7px;
+  }
 `
 
 export const ListIcon = styled.img`
