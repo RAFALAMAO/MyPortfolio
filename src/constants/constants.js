@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'BBVA Fintech',
     description: "App made with ReactJs. It is a platform that invites those interested in technology to propose an article for BBVA in order to have the opportunity to be sponsored.",
-    image: 'https://github.com/RAFALAMAO/bbva-fintech/blob/main/public/images/webPage.png?raw=true',
+    image: '/images/projects/bbva.png',
     tags: ['React', 'MySQL', 'Azure', 'Axios'],
     source: 'https://github.com/RAFALAMAO/bbva-fintech',
     visit: 'https://rafalamao.github.io/bbva-fintech'
@@ -59,7 +59,7 @@ export const projects = [
   {
     title: 'Hector Quadrotor Port',
     description: "Due hector quadrotor (drone simulator) only works on ROS melodic version, I generated a port to work with ROS Noetic.",
-    image: 'https://github.com/RAFALAMAO/hector-quadrotor-noetic/raw/main/imgs/gif.GIF',
+    image: '/images/projects/hector.png',
     tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/hector-quadrotor-noetic',
     visit: null
@@ -67,7 +67,7 @@ export const projects = [
   {
     title: 'ORBSLAM2 Ubuntu 20 Port',
     description: "Due ORBSLAM2 is a little old, I generated a port of this algorithms to work with Ubuntu 20 and ROS Noetic.",
-    image: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC/raw/main/images/ORB_SLAM2.gif',
+    image: '/images/projects/ORB_SLAM2.gif',
     tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC',
     visit: null
@@ -75,7 +75,7 @@ export const projects = [
   {
     title: 'ORBSLAM3 Ubuntu 20 Port',
     description: "Due ORBSLAM3 is a little old, I generated a port of this algorithms to work with Ubuntu 20 and ROS Noetic.",
-    image: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC/raw/main/images/ORB_SLAM3.gif',
+    image: '/images/projects/ORB_SLAM3.gif',
     tags: ['ROS', 'C++'],
     source: 'https://github.com/RAFALAMAO/ORB_SLAM3_NOETIC',
     visit: null

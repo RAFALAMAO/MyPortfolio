@@ -11,8 +11,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "framer-motion": "^6.3.3",
+    "framer-motion": "^4.1.17",
     "next": "10.2.3",
+    "next-images": "^1.8.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icon-cloud": "^4.1.4",

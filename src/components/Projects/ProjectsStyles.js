@@ -1,13 +1,15 @@
 import styled from 'styled-components';
+import Image from 'next/image'
 import { motion } from 'framer-motion';
 
-export const Img = styled.img`
+export const Img = styled(Image)`
   width: 100%;
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
   overflow: hidden;
-`;
+  background-color: black;
+`
 
 export const GridContainer = styled(motion.section)`
   display: grid;
