@@ -100,7 +100,7 @@ export const ListParagraph = styled.p`
 `
 
 export const ListItem = styled.li`
-  max-width: 320px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(52, 164, 235, .75);
@@ -108,7 +108,7 @@ export const ListItem = styled.li`
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
-  padding: 20px 25px;
+  padding: 10px 17px;
 
 @media ${props => props.theme.breakpoints.md}{
   max-width: 203px;
@@ -118,6 +118,7 @@ export const ListItem = styled.li`
   margin-bottom: 14px;
   max-width: 320px;
   flex-direction: row;
+  padding: 5px 7px;
 }
 `
 
