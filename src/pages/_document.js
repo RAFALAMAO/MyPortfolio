@@ -31,7 +31,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en-GB'>
         <Head>
-          <title>RAFALAMAO | Portfolio</title>
           <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
           <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png"/>
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png"/>
@@ -58,7 +57,6 @@ export default class MyDocument extends Document {
               }}
             />
           </div>
-          <script src="/static/starsAnimation.js"></script>
           <Main />
           <NextScript />
         </body>

@@ -14,8 +14,8 @@ function Acomplishments() {
 
   return (
     <Section>
-      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inView, entry)} $divider />
-      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inView, entry)}>Achievements</SectionTitle>
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.5, inView, entry)} $divider />
+      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.9, inView, entry)}>Achievements</SectionTitle>
       <div ref={ref}>
         <Boxes>
           {AcomplishmentsData.map((card, index) => (

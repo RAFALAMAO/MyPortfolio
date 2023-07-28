@@ -1,9 +1,16 @@
-const withImages = require('next-images')
-
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  /* config options here */
-  ...withImages()
+  publicRuntimeConfig: {
+    // Will be available on both server and client
+    staticFolder: '/public'
+  },
+  images: {
+    unoptimized: true,
+  },
+  compiler: {
+    styledComponents: true
+  }
 }
 
 module.exports = nextConfig

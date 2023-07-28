@@ -73,8 +73,8 @@ const Timeline = () => {
 
   return (
     <Section id='about'>
-      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inViewAbout, entryAbout)} $divider />
-      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inViewAbout, entryAbout)}>About</SectionTitle>
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.5, inViewAbout, entryAbout)} $divider />
+      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.9, inViewAbout, entryAbout)}>About</SectionTitle>
       <div ref={refAbout}>
         <SectionText>
           <br />
@@ -103,8 +103,8 @@ const Timeline = () => {
           <br />
         </SectionText>
       </div>
-      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.6, inViewElse, entryElse)}/>
-      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(1, inViewElse, entryElse)}>
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.5, inViewElse, entryElse)}/>
+      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.9, inViewElse, entryElse)}>
         <br />
         What else?
       </SectionTitle>
