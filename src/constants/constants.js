@@ -5,11 +5,20 @@ import Orbslam3dImg from "../../public/images/projects/Orbslam3d.png";
 import VitReactImg from "../../public/images/projects/vitReact.png";
 import BotSegImg from "../../public/images/projects/BotSeg.png";
 import HectorImg from "../../public/images/projects/hector.png";
+import RaymanImg from "../../public/images/projects/rayman.jpg";
 import FramerMotionAppImg from "../../public/images/projects/framerMotionApp.gif";
 import ORB_SLAM2Img from "../../public/images/projects/ORB_SLAM2.gif";
 import ORB_SLAM3Img from "../../public/images/projects/ORB_SLAM3.gif";
 
 export const projects = [
+  {
+    title: 'Rayman Game Port',
+    description: "Due Rayman Jungle Run is a little old, I generated a port of this game to work with Android 13. The port was decompiled with Apktool and modified with smali. I wrote a XDA forum post about it.",
+    image: RaymanImg,
+    tags: ['Smali', 'Apktool', 'Android'],
+    source: 'https://github.com/RAFALAMAO/Rayman-Jungle-Run-Port/tree/main',
+    visit: 'https://xdaforums.com/t/rayman-jungle-fiesta-run-android-13-port-decompiled-apktool.4658702/'
+  },
   {
     title: 'BBVA Fintech',
     description: "App made with ReactJs. It is a platform that invites those interested in technology to propose an article for BBVA in order to have the opportunity to be sponsored.",
