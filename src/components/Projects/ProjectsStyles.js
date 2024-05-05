@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Image from 'next/image'
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import styled from 'styled-components';
 
 export const Img = styled(Image)`
   width: 100%;
@@ -9,7 +9,7 @@ export const Img = styled(Image)`
   object-fit: cover;
   overflow: hidden;
   background-color: black;
-`
+`;
 
 export const GridContainer = styled(motion.section)`
   display: grid;
@@ -18,11 +18,13 @@ export const GridContainer = styled(motion.section)`
   place-items: start;
   column-gap: 3rem;
   row-gap: 3rem;
-  @media ${(props) => props.theme.breakpoints.sm} {
+
+  @media ${props => props.theme.breakpoints.sm} {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: .5rem;
+    padding: 0.5rem;
   }
 `;
+
 export const BlogCard = styled.div`
   background: #07061c;
   backdrop-filter: blur(0px);
@@ -40,26 +42,26 @@ export const BlogCard = styled.div`
     &:hover {
       opacity: 1;
       transform: scale(1.04);
-      border: 1px solid rgba(52, 164, 235, .75);
+      border: 1px solid rgba(52, 164, 235, 0.75);
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(3px);
       -webkit-backdrop-filter: blur(3px);
     }
   }
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${props => props.theme.breakpoints.md} {
     transition: all 0.2s ease-in-out;
     &:hover {
       opacity: 1;
       transform: scale(1.015);
-      border: 1px solid rgba(52, 164, 235, .75);
+      border: 1px solid rgba(52, 164, 235, 0.75);
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(3px);
       -webkit-backdrop-filter: blur(3px);
     }
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${props => props.theme.breakpoints.sm} {
     width: 100%;
   }
 `;
@@ -70,26 +72,26 @@ export const FlyShip = styled('div')`
 
   @media screen and (min-width: 768px) {
     transition: all 0.2s ease-in-out;
-    ${BlogCard}:hover &{
+    ${BlogCard}:hover & {
       transform: translateX(210px);
-      color: ${(props) => `rgb(${props.$colorShip})`};
+      color: ${props => `rgb(${props.$colorShip})`};
       opacity: 1;
     }
   }
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${props => props.theme.breakpoints.md} {
     transition: all 0.2s ease-in-out;
-    ${BlogCard}:hover &{
+    ${BlogCard}:hover & {
       transform: translateX(210px);
-      color: ${(props) => `rgb(${props.$colorShip})`};
-      opacity: .9;
+      color: ${props => `rgb(${props.$colorShip})`};
+      opacity: 0.9;
     }
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${props => props.theme.breakpoints.sm} {
     width: 100%;
   }
-`
+`;
 
 export const TitleContent = styled.div`
   text-align: center;
@@ -102,7 +104,7 @@ export const HeaderThree = styled.h3`
   letter-spacing: 1px;
   color: #9cb4e3;
   padding: 0.5rem 0;
-  font-size: ${(props) => (props.$title ? '3rem' : '2rem')};
+  font-size: ${props => (props.$title ? '3rem' : '2rem')};
 `;
 
 export const Hr = styled.hr`
@@ -128,12 +130,12 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   font-style: 2rem;
   line-height: 24px;
   text-align: end;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${props => props.theme.breakpoints.sm} {
     padding: 0 20px;
   }
   @media screen and (min-width: 576px) {
@@ -153,12 +155,12 @@ export const ExternalLinks = styled.a`
   color: #d4c0c0;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background:  ${'linear-gradient(45deg, #13415c 0%, #322aa1 100%)'};
+  background: ${'linear-gradient(45deg, #13415c 0%, #322aa1 100%)'};
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
     background: ${'linear-gradient(45deg, #2272a1 0%, #453ade 100%)'};
-    color: rgba(255, 255, 255)
+    color: rgba(255, 255, 255);
   }
 `;
 
@@ -167,6 +169,7 @@ export const TagList = styled.ul`
   justify-content: space-around;
   padding: 2rem;
 `;
+
 export const Tag = styled.li`
   color: #bfbfd8;
   font-size: 1.5rem;

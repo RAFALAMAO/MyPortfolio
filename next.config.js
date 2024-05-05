@@ -6,20 +6,20 @@ const nextConfig = {
     staticFolder: '/public'
   },
   images: {
-    ormats: ['image/avif', 'image/webp'],
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'my-portfolio-rafalamao.vercel.app',
         port: '',
-        pathname: '/images/projects/**',
-      },
-    ],
+        pathname: '/images/projects/**'
+      }
+    ]
     // unoptimized: true
   },
   compiler: {
     styledComponents: true
   }
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

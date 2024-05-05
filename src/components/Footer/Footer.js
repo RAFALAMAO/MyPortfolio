@@ -1,8 +1,18 @@
 import React from 'react';
-import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import {
+  CompanyContainer,
+  FooterWrapper,
+  LinkColumn,
+  LinkItem,
+  LinkList,
+  LinkTitle,
+  Slogan,
+  SocialContainer,
+  SocialIconsContainer
+} from './FooterStyles';
 
 const Footer = () => {
   return (
@@ -14,7 +24,7 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>E-mail</LinkTitle>
-          <LinkItem href="https://outlook.live.com/mail" target="_blank">
+          <LinkItem href='https://outlook.live.com/mail' target='_blank'>
             aaronjt@outlook.com
           </LinkItem>
         </LinkColumn>
@@ -24,17 +34,14 @@ const Footer = () => {
           <Slogan>&copy; 2023 | A. Juárez</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/RAFALAMAO" target="_blank">
-            <AiFillGithub size="3rem" />
+          <SocialIcons href='https://github.com/RAFALAMAO' target='_blank'>
+            <AiFillGithub size='3rem' />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/aar%C3%B3n-ju%C3%A1rez-aa42361ab" target="_blank">
-            <AiFillLinkedin size="3rem" />
+          <SocialIcons href='https://www.linkedin.com/in/aar%C3%B3n-ju%C3%A1rez-aa42361ab' target='_blank'>
+            <AiFillLinkedin size='3rem' />
           </SocialIcons>
-          {/* <SocialIcons href="https://twitter.com/MacieyTM" target="_blank">
-            <AiOutlineTwitter size="3rem" />
-          </SocialIcons> */}
-          <SocialIcons href="https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA" target="_blank">
-            <AiFillYoutube size="3rem" />
+          <SocialIcons href='https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA' target='_blank'>
+            <AiFillYoutube size='3rem' />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>

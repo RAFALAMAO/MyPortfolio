@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { HiOutlineArrowCircleUp } from 'react-icons/hi';
 import { Button } from './ScrollButtonStyles';
 
@@ -17,9 +17,7 @@ const ScrollButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
-      /* you can also use 'auto' behaviour
-		in place of 'smooth' */
+      behavior: 'smooth'
     });
   };
 

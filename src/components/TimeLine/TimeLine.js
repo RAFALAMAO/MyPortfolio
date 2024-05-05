@@ -1,5 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
+import { TIME_LINE_DATA } from '../../constants';
+import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import {
   CarouselButton,
   CarouselButtonDot,
@@ -10,24 +12,21 @@ import {
   CarouselItemText,
   CarouselItemTitle,
   CarouselMobileScrollNode,
-  GothicLink,
+  GothicLink
 } from './TimeLineStyles';
-import {
-  Section,
-  SectionDivider,
-  SectionText,
-  SectionTitle,
-} from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
 
 import { useInView } from 'react-intersection-observer';
 import { animateTitle } from '../../utils/animateTitle';
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+const TOTAL_CAROUSEL_COUNT = TIME_LINE_DATA.length;
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
+
+  // Hoock used for get in view element information
+  const [refAbout, inViewAbout, entryAbout] = useInView({ threshold: 0.2 });
+  const [refElse, inViewElse, entryElse] = useInView({ threshold: 0.2 });
 
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: 'smooth' });
@@ -37,9 +36,7 @@ const Timeline = () => {
     e.preventDefault();
 
     if (carouselRef.current) {
-      const scrollLeft = Math.floor(
-        carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
-      );
+      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
 
       scroll(carouselRef.current, scrollLeft);
     }
@@ -48,16 +45,14 @@ const Timeline = () => {
   const handleScroll = () => {
     if (carouselRef.current) {
       const index = Math.round(
-        (carouselRef.current.scrollLeft /
-          (carouselRef.current.scrollWidth * 0.7)) *
-          TimeLineData.length
+        (carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TIME_LINE_DATA.length
       );
 
       setActiveItem(index);
     }
   };
 
-  // snap back to beginning of scroll when window is resized
+  // Snap back to beginning of scroll when window is resized
   // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
@@ -67,14 +62,12 @@ const Timeline = () => {
     window.addEventListener('resize', handleResize);
   }, []);
 
-  // Hoock used for get in view element information
-  const [ refAbout, inViewAbout, entryAbout ] = useInView({threshold: .2});
-  const [ refElse, inViewElse, entryElse ] = useInView({threshold: .2});
-
   return (
     <Section id='about'>
       <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.5, inViewAbout, entryAbout)} $divider />
-      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.9, inViewAbout, entryAbout)}>About</SectionTitle>
+      <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.9, inViewAbout, entryAbout)}>
+        About
+      </SectionTitle>
       <div ref={refAbout}>
         <SectionText>
           <br />
@@ -82,17 +75,17 @@ const Timeline = () => {
           yo
           <br />
           <br />
-          I’m a Mechatronic Engineer graduated from UPIITA of IPN México, I love development, music and graphical design.
+          I’m a Mechatronic Engineer graduated from UPIITA of IPN México, I love development, music and graphical
+          design.
           <br />
           <br />
-          I started with C / C ++, then Matlab, LabView, Python and JavaScript. Currently I am programming mainly in React and NodeJS technology.
+          I started with C / C ++, then Matlab, LabView, Python and JavaScript. Currently I am programming mainly in
+          React and NodeJS technology.
           <br />
           <br />
-          I worked one year and a half at Intevolution developing
-          intelligent bots with Javascript, Azure services and programing simple
-          front-end interfaces. I made my social service and engineering
-          final work at CINVESTAV Zacatenco developing with ROS some
-          computer vision and mobile robot control nodes.
+          I worked one year and a half at Intevolution developing intelligent bots with Javascript, Azure services and
+          programing simple front-end interfaces. I made my social service and engineering final work at CINVESTAV
+          Zacatenco developing with ROS some computer vision and mobile robot control nodes.
           <br />
           <br />
           I'm currently working for a Mexican company called The Rocket Code as a full stack developer.
@@ -103,7 +96,7 @@ const Timeline = () => {
           <br />
         </SectionText>
       </div>
-      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.5, inViewElse, entryElse)}/>
+      <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.5, inViewElse, entryElse)} />
       <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.9, inViewElse, entryElse)}>
         <br />
         What else?
@@ -111,23 +104,24 @@ const Timeline = () => {
       <div ref={refElse}>
         <SectionText>
           <br />- Creator of guitar tabs (
-            <GothicLink href='https://www.ultimate-guitar.com/contribution/72518755-RAFALAMAO/tabs' target='_blank'>
-              My tabs
-            </GothicLink>
-            &nbsp;or&nbsp;
-            <GothicLink href='https://www.ultimate-guitar.com/u/RAFALAMAO' target='_blank'>
-              UG profile
-            </GothicLink>) (2016-present)
+          <GothicLink href='https://www.ultimate-guitar.com/contribution/72518755-RAFALAMAO/tabs' target='_blank'>
+            My tabs
+          </GothicLink>
+          &nbsp;or&nbsp;
+          <GothicLink href='https://www.ultimate-guitar.com/u/RAFALAMAO' target='_blank'>
+            UG profile
+          </GothicLink>
+          ) (2016-present)
           <br />
           <br />- Project as freelance with Intevolution in a computer vision project (
           <GothicLink href='https://intevolution.ai' target='_blank'>
             Intevolution
-          </GothicLink>){' '}
-          (2021)
+          </GothicLink>
+          ) (2021)
           <br />
           <br />- YouTube content creator (ROS simulations, guitar covers, etc.) (
           <GothicLink href='https://www.youtube.com/channel/UCURD3N9TC9OJn0BWRf2J8oA' target='_blank'>
-          Channel
+            Channel
           </GothicLink>
           ) (2014-present)
           <br />
@@ -135,26 +129,24 @@ const Timeline = () => {
           - Languages:&nbsp;&nbsp;English (B1)&nbsp;&nbsp;|&nbsp;&nbsp;Spanish (Native)
           <br />
           <br />
-          - Strengths:  &nbsp;Ingenuity &nbsp;|&nbsp; Ambitiony &nbsp;|&nbsp; Responsibility &nbsp;|&nbsp; Punctuality
+          - Strengths: &nbsp;Ingenuity &nbsp;|&nbsp; Ambitiony &nbsp;|&nbsp; Responsibility &nbsp;|&nbsp; Punctuality
           <br />
           <br />
-          - Interests:&nbsp;&nbsp;AI&nbsp;&nbsp;|&nbsp;&nbsp;Music&nbsp;&nbsp;|&nbsp;&nbsp;Graphic design&nbsp;&nbsp;|&nbsp;&nbsp;Technological development&nbsp;&nbsp;|&nbsp;&nbsp;Science
+          - Interests:&nbsp;&nbsp;AI&nbsp;&nbsp;|&nbsp;&nbsp;Music&nbsp;&nbsp;|&nbsp;&nbsp;Graphic
+          design&nbsp;&nbsp;|&nbsp;&nbsp;Technological development&nbsp;&nbsp;|&nbsp;&nbsp;Science
           <br />
           <br />
         </SectionText>
       </div>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-          {TimeLineData.map((item, index) => (
-            <CarouselMobileScrollNode
-              key={index}
-              final={index === TOTAL_CAROUSEL_COUNT - 1}
-            >
+          {TIME_LINE_DATA.map((item, index) => (
+            <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
               <CarouselItem
                 index={index}
                 id={`carousel__item-${index}`}
                 active={activeItem}
-                onClick={(e) => handleClick(e, index)}
+                onClick={e => handleClick(e, index)}
               >
                 <CarouselItemTitle>
                   {`${item.year}`}
@@ -182,11 +174,7 @@ const Timeline = () => {
                         gradientUnits='userSpaceOnUse'
                       >
                         <stop stopColor='white' />
-                        <stop
-                          offset='0.79478'
-                          stopColor='white'
-                          stopOpacity='0'
-                        />
+                        <stop offset='0.79478' stopColor='white' stopOpacity='0' />
                       </linearGradient>
                     </defs>
                   </CarouselItemImg>
@@ -198,13 +186,13 @@ const Timeline = () => {
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((item, index) => {
+        {TIME_LINE_DATA.map((item, index) => {
           return (
             <CarouselButton
               key={index}
               index={index}
               active={activeItem}
-              onClick={(e) => handleClick(e, index)}
+              onClick={e => handleClick(e, index)}
               type='button'
             >
               <CarouselButtonDot active={activeItem} />
@@ -212,7 +200,6 @@ const Timeline = () => {
           );
         })}
       </CarouselButtons>
-      {/* <SectionDivider /> */}
     </Section>
   );
 };
