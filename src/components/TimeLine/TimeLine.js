@@ -71,7 +71,7 @@ const Timeline = () => {
       <div ref={refAbout}>
         <SectionText>
           <br />
-          Aarón&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAFALAMAO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27
+          Aarón&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAFALAMAO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28
           yo
           <br />
           <br />
@@ -79,16 +79,20 @@ const Timeline = () => {
           design.
           <br />
           <br />
-          I started with C / C ++, then Matlab, LabView, Python and JavaScript. Currently I am programming mainly in
-          React and NodeJS technology.
+          I started with C / C ++, then Matlab, LabView, Python, JavaScript and Typescript. Currently I am programming
+          mainly in Next.js (TS) and NestJS (TS) technologies.
           <br />
           <br />
           I worked one year and a half at Intevolution developing intelligent bots with Javascript, Azure services and
           programing simple front-end interfaces. I made my social service and engineering final work at CINVESTAV
-          Zacatenco developing with ROS some computer vision and mobile robot control nodes.
+          Zacatenco developing with ROS some computer vision and mobile robot control projects.
           <br />
           <br />
-          I'm currently working for a Mexican company called The Rocket Code as a full stack developer.
+          I'm currently working for a Mexican company called&nbsp;
+          <GothicLink href='https://therocketcode.com/' target='_blank'>
+            The Rocket Code
+          </GothicLink>
+          &nbsp;as a full stack developer.
           <br />
           <br />
           I can work stationary, hybrid and remotely (preferably), both full-time and part-time.

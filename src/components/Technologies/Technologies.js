@@ -20,7 +20,7 @@ function Technologies() {
       <SectionTextSkills ref={ref}>
         <br />
         <strong>Front-End:</strong> HTML, CSS, JavaScript, Typescript, React, Vue.js, Next.js, Framer Motion, Styled
-        Components
+        Components, Redux
         <br />
         <br />
         <strong>Back-End:</strong> JavaScript, Typescript, Node JS, Express, NestJS
@@ -37,7 +37,7 @@ function Technologies() {
         <strong>Cloud:</strong> Azure, AWS
         <br />
         <br />
-        <strong>Data science (Python):</strong> AI (TF), OpenCV, Pandas, NumPy, Matplotlib, scikit-learn
+        <strong>Data science (Python):</strong> TensorFlow, OpenCV, Pandas, NumPy, Matplotlib, Scikit-Learn
         <br />
         <br />
         <strong>IDE:</strong> Visual Studio Code, Google Colab, Jupyter notebook
@@ -59,7 +59,7 @@ function Technologies() {
             <ListParagraph>
               Most used:
               <br />
-              React.js
+              Next.js (TS)
             </ListParagraph>
           </ListContainer>
         </ListItem>
@@ -72,7 +72,7 @@ function Technologies() {
             <ListParagraph>
               Most used:
               <br />
-              Javascript
+              NestJS (TS)
             </ListParagraph>
           </ListContainer>
         </ListItem>

@@ -31,7 +31,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>&copy; 2023 | A. Juárez</Slogan>
+          <Slogan>&copy; 2024 | A. Juárez</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href='https://github.com/RAFALAMAO' target='_blank'>
