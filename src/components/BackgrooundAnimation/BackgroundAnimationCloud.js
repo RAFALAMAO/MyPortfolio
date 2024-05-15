@@ -50,7 +50,10 @@ const icons = iconNames.map(icon => {
 });
 
 const BackgroundAnimationCloud = () => {
-  const [velocity, setVelocity] = useState([0, 0]);
+  const [dinamicSettings, setDinamicSettings] = useState({
+    velocity: [0, 0],
+    noMouse: false
+  });
 
   const cloudProps = {
     id: 'stable-id-for-csr-ssr',
@@ -70,6 +73,7 @@ const BackgroundAnimationCloud = () => {
       reverse: false,
       activeCursor: 'default',
       dragControl: true,
+      noMouse: dinamicSettings.noMouse,
       dragThreshold: 0.01,
       shape: 'hring',
       outlineColour: '#3a82e0',
@@ -78,17 +82,17 @@ const BackgroundAnimationCloud = () => {
       wheelZoom: false,
       imageScale: 1.5,
       tooltip: 'native',
-      initial: velocity,
+      initial: dinamicSettings.velocity,
       clickToFront: 500,
       tooltipDelay: 0
     }
   };
 
   useEffect(() => {
-    if (window.innerWidth <= 400) {
-      setVelocity([0.09, -0.09]);
+    if (window.innerWidth <= 640) {
+      setDinamicSettings({ velocity: [0.09, -0.09], noMouse: true });
     } else {
-      setVelocity([0.015, -0.015]);
+      setDinamicSettings({ velocity: [0.015, -0.015], noMouse: false });
     }
   }, []);
 
