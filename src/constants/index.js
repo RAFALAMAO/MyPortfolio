@@ -7,10 +7,20 @@ import BbvaImg from '../../public/images/projects/bbva.png';
 import FramerMotionAppImg from '../../public/images/projects/framerMotionApp.gif';
 import HectorImg from '../../public/images/projects/hector.png';
 import LendincImg from '../../public/images/projects/lendinc.png';
+import MailServerImg from '../../public/images/projects/mailServer.png';
 import RaymanImg from '../../public/images/projects/rayman.jpg';
 import VitReactImg from '../../public/images/projects/vitReact.png';
 
 export const PROJECTS = [
+  {
+    title: 'Email Server',
+    description:
+      'Simple email server, it was built with Poste.io docker image. The server can be used for sending and receiving emails through SMTP and IMAP protocols. The server is alocated in a Google Cloud VM.',
+    image: MailServerImg,
+    tags: ['Docker', 'GoDaddy™', 'Google', 'Poste.io'],
+    source: null,
+    visit: 'https://mail.kiky.pro'
+  },
   {
     title: 'Rayman Game Port',
     description:

@@ -26,7 +26,7 @@ export const GridContainer = styled(motion.section)`
 `;
 
 export const BlogCard = styled.div`
-  background: #07061c;
+  background: rgba(6, 5, 27, 1);
   backdrop-filter: blur(0px);
   text-align: center;
   width: 400px;
@@ -133,7 +133,7 @@ export const CardInfo = styled.p`
   color: rgba(255, 255, 255, 0.75);
   font-style: 2rem;
   line-height: 24px;
-  text-align: end;
+  text-align: left;
 
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 20px;
