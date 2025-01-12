@@ -41,18 +41,6 @@ export default class MyDocument extends Document {
           <link rel='mask-icon' href='/static/safari-pinned-tab.svg' color='#5bbad5' />
           <meta name='msapplication-TileColor' content='#0d0e21' />
           <meta name='theme-color' content='#0d0e21'></meta>
-
-          {/* Google analytics */}
-          <script async src='https://www.googletagmanager.com/gtag/js?id=G-QCM76C6CMH'></script>
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-QCM76C6CMH');
-            `}
-          </script>
         </Head>
         <body>
           <div>
