@@ -1,6 +1,9 @@
 {
   "name": "portfolio_nextjs",
   "version": "0.1.0",
+   "engines": {
+      "node": "20.x"
+    },
   "homepage": "https://rafalamao.github.io/myPortfolio",
   "private": true,
   "scripts": {
