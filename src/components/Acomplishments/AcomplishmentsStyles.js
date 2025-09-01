@@ -30,18 +30,13 @@ export const Box = styled.div`
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-
-  @media ${props => props.theme.breakpoints.lg} {
-    height: 210px;
-  }
+  overflow: auto;
 
   @media ${props => props.theme.breakpoints.md} {
-    height: 135px;
     padding: 16px;
   }
 
   @media ${props => props.theme.breakpoints.sm} {
-    height: 110px;
     padding: 12px;
   }
 `;
@@ -57,7 +52,6 @@ export const BoxNum = styled.h5`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 15px;
 
   @media ${props => props.theme.breakpoints.md} {
     font-size: 28px;
@@ -85,6 +79,26 @@ export const BoxText = styled.p`
 
   @media ${props => props.theme.breakpoints.sm} {
     font-size: 10px;
+    line-height: 14px;
+  }
+`;
+
+export const BoxTextTime = styled.p`
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: rgba(52, 164, 235, 0.75);
+  margin-bottom: 15px;
+
+  @media ${props => props.theme.breakpoints.md} {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media ${props => props.theme.breakpoints.sm} {
+    font-size: 11px;
     line-height: 14px;
   }
 `;

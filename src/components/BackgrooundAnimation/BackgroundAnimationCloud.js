@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Cloud, renderSimpleIcon } from 'react-icon-cloud';
 import * as Allicons from 'simple-icons';
 import styled from 'styled-components';
@@ -36,7 +36,9 @@ const iconNames = [
   'siNodedotjs',
   'siNumpy',
   'siGithub',
-  'siBitbucket'
+  'siBitbucket',
+  'siAngular',
+  'siFastapi'
 ];
 
 const icons = iconNames.map(icon => {
@@ -75,7 +77,7 @@ const BackgroundAnimationCloud = () => {
       dragControl: true,
       noMouse: dinamicSettings.noMouse,
       dragThreshold: 0.01,
-      shape: 'hring',
+      shape: 'sphere',
       outlineColour: '#3a82e0',
       outlineMethod: 'colour',
       shadow: '#fff',

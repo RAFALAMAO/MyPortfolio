@@ -4,7 +4,6 @@ import { LeftSection } from './HeroStyles';
 
 const Hero = props => (
   <>
-    {/* Test */}
     <Section row nopadding>
       <LeftSection>
         <SectionTitle $main $principal>
