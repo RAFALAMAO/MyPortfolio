@@ -1,4 +1,3 @@
-import React from 'react';
 import { DiJavascript1, DiReact, DiVisualstudio } from 'react-icons/di';
 import { Section, SectionDivider, SectionTextSkills, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
@@ -20,10 +19,10 @@ function Technologies() {
       <SectionTextSkills ref={ref}>
         <br />
         <strong>Front-End:</strong> HTML, CSS, JavaScript, Typescript, React, Vue.js, Next.js, Framer Motion, Styled
-        Components, Redux
+        Components, Redux, Angular
         <br />
         <br />
-        <strong>Back-End:</strong> JavaScript, Typescript, Node JS, Express, NestJS
+        <strong>Back-End:</strong> JavaScript, Typescript, Python, Node JS, Express, NestJS, FastAPI
         <br />
         <br />
         <strong>DB:</strong> MySQL, PostgreSQL, MongoDB, Sequelize, TypeORM

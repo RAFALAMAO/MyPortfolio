@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Cloud, renderSimpleIcon } from 'react-icon-cloud';
 import * as Allicons from 'simple-icons';
 import styled from 'styled-components';
@@ -36,7 +36,9 @@ const iconNames = [
   'siNodedotjs',
   'siNumpy',
   'siGithub',
-  'siBitbucket'
+  'siBitbucket',
+  'siAngular',
+  'siFastapi'
 ];
 
 const icons = iconNames.map(icon => {

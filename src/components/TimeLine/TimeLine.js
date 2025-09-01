@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { TIME_LINE_DATA } from '../../constants';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
@@ -71,7 +71,7 @@ const Timeline = () => {
       <div ref={refAbout}>
         <SectionText>
           <br />
-          Aarón&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAFALAMAO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28
+          Aarón&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAFALAMAO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;29
           yo
           <br />
           <br />
@@ -79,24 +79,31 @@ const Timeline = () => {
           design.
           <br />
           <br />
-          I started with C / C ++, then Matlab, LabView, Python, JavaScript and Typescript. Currently I am programming
-          mainly in Next.js (TS) and NestJS (TS) technologies.
+          I started with C / C ++, then Matlab, LabView, Python, JavaScript, Typescript. Currently I am programming
+          mainly in Angular (TS) and FasAPI (Python) technologies.
           <br />
           <br />
           I worked one year and a half at Intevolution developing intelligent bots with Javascript, Azure services and
           programing simple front-end interfaces. I made my social service and engineering final work at CINVESTAV
           Zacatenco developing with ROS some computer vision and mobile robot control projects.
           <br />
-          <br />
-          I'm currently working for a Mexican company called&nbsp;
+          <br />I worked two years at a Mexican company called&nbsp;
           <GothicLink href='https://therocketcode.com/' target='_blank'>
             The Rocket Code
-          </GothicLink>
+          </GothicLink>{' '}
+          as a full stack developer.
+          <br />
+          <br />
+          I'm currently working for{' '}
+          <GothicLink href='https://tec.mx/' target='_blank'>
+            Tecnológico de Monterrey
+          </GothicLink>{' '}
           &nbsp;as a full stack developer.
           <br />
           <br />
           I can work stationary, hybrid and remotely (preferably), both full-time and part-time.
           <br />
+          https://tec.mx/
           <br />
         </SectionText>
       </div>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, BoxNum, BoxText, Boxes } from './AcomplishmentsStyles';
 
@@ -16,13 +14,14 @@ function Acomplishments() {
     <Section>
       <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.5, inView, entry)} $divider />
       <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.9, inView, entry)}>
-        Achievements
+        Experience
       </SectionTitle>
       <div ref={ref}>
         <Boxes>
           {ACOMPLISHMENTS_DATA.map((card, index) => (
             <Box key={index}>
               <BoxNum>{`${card.year}`}</BoxNum>
+              <BoxText>2 years</BoxText>
               <BoxText>{card.text}</BoxText>
             </Box>
           ))}

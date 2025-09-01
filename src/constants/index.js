@@ -142,6 +142,7 @@ export const TIME_LINE_DATA = [
 ];
 
 export const ACOMPLISHMENTS_DATA = [
+  { year: 2024, text: 'Hired at Tecnológico de Monterrey as a Full Stack developer' },
   {
     year: 2023,
     text: 'Accepted in the BBVA process as a software developer intern'
