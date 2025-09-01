@@ -142,12 +142,8 @@ export const TIME_LINE_DATA = [
 ];
 
 export const ACOMPLISHMENTS_DATA = [
-  { year: 2024, text: 'Hired at Tecnológico de Monterrey as a Full Stack developer' },
-  {
-    year: 2023,
-    text: 'Accepted in the BBVA process as a software developer intern'
-  },
-  { year: 2022, text: 'Hired at The Rocket Code as a Full Stack developer' },
-  { year: 2021, text: 'Mechatronics engineering graduation' },
-  { year: 2020, text: 'Hired at Intevolution as a software developer intern' }
+  { year: 2024, time: 'Present', company: 'Tecnológico de Monterrey', position: 'Full Stack developer' },
+  { year: 2023, time: 'Selected', company: 'BBVA', position: 'Developer intern' },
+  { year: 2022, time: '2 yrs 6 mos', company: 'The Rocket Code', position: 'Full Stack developer' },
+  { year: 2020, time: '1 yr', company: 'Intevolution', position: 'Software developer intern' }
 ];

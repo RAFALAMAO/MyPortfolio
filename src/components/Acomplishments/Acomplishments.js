@@ -1,5 +1,5 @@
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, BoxNum, BoxText, Boxes } from './AcomplishmentsStyles';
+import { Box, BoxNum, BoxText, BoxTextTime, Boxes } from './AcomplishmentsStyles';
 
 import { useInView } from 'react-intersection-observer';
 import { animateTitle } from '../../utils/animateTitle';
@@ -11,7 +11,7 @@ function Acomplishments() {
   const [ref, inView, entry] = useInView({ threshold: 0.2 });
 
   return (
-    <Section>
+    <Section id='acomplishments'>
       <SectionDivider initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.5, inView, entry)} $divider />
       <SectionTitle initial={{ x: -100, opacity: 0 }} animate={animateTitle(0.9, inView, entry)}>
         Experience
@@ -21,8 +21,11 @@ function Acomplishments() {
           {ACOMPLISHMENTS_DATA.map((card, index) => (
             <Box key={index}>
               <BoxNum>{`${card.year}`}</BoxNum>
-              <BoxText>2 years</BoxText>
-              <BoxText>{card.text}</BoxText>
+              <BoxTextTime>{card.time}</BoxTextTime>
+              <BoxText>
+                <b>{card.company}</b>
+              </BoxText>
+              <BoxText>{card.position}</BoxText>
             </Box>
           ))}
         </Boxes>

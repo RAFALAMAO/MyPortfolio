@@ -77,7 +77,7 @@ const BackgroundAnimationCloud = () => {
       dragControl: true,
       noMouse: dinamicSettings.noMouse,
       dragThreshold: 0.01,
-      shape: 'hring',
+      shape: 'sphere',
       outlineColour: '#3a82e0',
       outlineMethod: 'colour',
       shadow: '#fff',

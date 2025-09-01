@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 
 import { Container, Div1, Div2, Div3, NavLink, ShowCase, SocialIcons } from './HeaderStyles';
@@ -21,6 +20,9 @@ const Header = () => (
       </li>
       <li>
         <NavLink href='#about'>About</NavLink>
+      </li>
+      <li>
+        <NavLink href='#acomplishments'>Experience</NavLink>
       </li>
       <li>
         <NavLink href='https://rafalamao.github.io' target='_blank'>
