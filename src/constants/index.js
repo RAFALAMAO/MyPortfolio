@@ -5,6 +5,7 @@ import ORB_SLAM3Img from '../../public/images/projects/ORB_SLAM3.gif';
 import Orbslam3dImg from '../../public/images/projects/Orbslam3d.png';
 import BbvaImg from '../../public/images/projects/bbva.png';
 import FramerMotionAppImg from '../../public/images/projects/framerMotionApp.gif';
+import GearVerseImg from '../../public/images/projects/gearVerse.png';
 import HectorImg from '../../public/images/projects/hector.png';
 import LendincImg from '../../public/images/projects/lendinc.png';
 import MailServerImg from '../../public/images/projects/mailServer.png';
@@ -12,6 +13,15 @@ import RaymanImg from '../../public/images/projects/rayman.jpg';
 import VitReactImg from '../../public/images/projects/vitReact.png';
 
 export const PROJECTS = [
+  {
+    title: 'Tech Store',
+    description:
+      'Simple tech store, it was built with React + Vite and NestJs. This app is a platform that invites those interested in buy tech items like laptops, smartphones, etc. Has some search and filter features.',
+    image: GearVerseImg,
+    tags: ['React', 'NestJs', 'PostgreSQL'],
+    source: 'https://github.com/RAFALAMAO/gear-verse-front.git',
+    visit: 'https://gear-verse-front.vercel.app/'
+  },
   {
     title: 'Email Server',
     description:

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { GoLinkExternal } from 'react-icons/go';
 import { HiOutlineMinus } from 'react-icons/hi';
 import { PROJECTS } from '../../constants';

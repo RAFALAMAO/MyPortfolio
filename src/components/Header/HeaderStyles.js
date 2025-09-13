@@ -30,6 +30,7 @@ export const Div1 = styled.div`
 `;
 
 export const Div2 = styled.div`
+  margin-top: 7px;
   grid-area: 1 / 2 / 2 / 5;
   display: flex;
   justify-content: space-around;
