@@ -285,6 +285,9 @@ export const DownloadButton = styled.button`
 
   &:hover > span {
     background: none;
+    box-shadow: 4px 2px 24px 5px rgba(65, 176, 252, 0.4);
+    -webkit-box-shadow: 4px 2px 24px 5px rgba(65, 176, 252, 0.4);
+    -moz-box-shadow: 4px 2px 24px 5px rgba(65, 176, 252, 0.4);
   }
 
   &:focus {
