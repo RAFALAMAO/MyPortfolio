@@ -103,7 +103,6 @@ const Timeline = () => {
           <br />
           I can work stationary, hybrid and remotely (preferably), both full-time and part-time.
           <br />
-          https://tec.mx/
           <br />
         </SectionText>
       </div>
